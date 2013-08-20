@@ -14,8 +14,21 @@ namespace theSims3Randomizer
         public mainWnd()
         {
             InitializeComponent();
+            string[] ragnar = returnToddlerTraits();
+
+            StringBuilder traits = new StringBuilder();
+
+            foreach (string trait in ragnar)
+            {
+                traits.Append(trait);
+                traits.Append('.');
+            }
+
+            MessageBox.Show(traits.ToString());
+
         }
 
+        private static Random rnd = new Random();
 
         private string returnSimTraits(int age)
         {
@@ -43,7 +56,7 @@ namespace theSims3Randomizer
 
         }
 
-        private string returnToddlerTraits()
+        private string[] returnToddlerTraits()
         {
             List<string> traits = new List<string>();
             traits.Add("Abscent-Minded");
@@ -72,11 +85,14 @@ namespace theSims3Randomizer
             traits.Add("Slob");
             traits.Add("Virtuoso");
 
-            traits.Remove("Genious");
+            int tSize = traits.Count;
+            IEnumerable<string> selectedTraits;
+            string[] returnTraits;
+            selectedTraits = traits.OrderBy(x => rnd.Next()).Take(2);
 
+            returnTraits = selectedTraits.ToArray();
 
-
-            return "yolo";
+            return returnTraits;
         }
 
         private string returnChildTraits()

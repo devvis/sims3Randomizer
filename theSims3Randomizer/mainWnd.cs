@@ -452,7 +452,7 @@ namespace theSims3Randomizer
                 case "Dog":
                 case "Cat":
                 case "Horse":
-                    lifetimeWishes.Add("Petwish");
+                    lifetimeWishes.Add("None");
                     break;
                 default:
                     lifetimeWishes.Add("Alchemy Artisan");

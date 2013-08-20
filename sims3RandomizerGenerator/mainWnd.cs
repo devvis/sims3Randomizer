@@ -71,7 +71,6 @@ namespace sims3RandomizerGenerator
 
 
 
-
         private void populatePetAges()
         {
             this.simAge.Items.Clear();
@@ -82,12 +81,23 @@ namespace sims3RandomizerGenerator
         private void populateHumanAges()
         {
             this.simAge.Items.Clear();
-            this.simAge.Items.Add("Toddler");
-            this.simAge.Items.Add("Child");
-            this.simAge.Items.Add("Teen");
-            this.simAge.Items.Add("Young Adult");
-            this.simAge.Items.Add("Adult");
-            this.simAge.Items.Add("Elder");
+            if (this.simSelectionList.Text == "Sim 1")
+            {
+                // we want to ensure that the first sim is always
+                // a grownup
+                this.simAge.Items.Add("Young Adult");
+                this.simAge.Items.Add("Adult");
+                this.simAge.Items.Add("Elder");
+            }
+            else
+            {
+                this.simAge.Items.Add("Toddler");
+                this.simAge.Items.Add("Child");
+                this.simAge.Items.Add("Teen");
+                this.simAge.Items.Add("Young Adult");
+                this.simAge.Items.Add("Adult");
+                this.simAge.Items.Add("Elder");
+            }
         }
 
 
@@ -108,6 +118,8 @@ namespace sims3RandomizerGenerator
                     populatePetAges();
                     break;
                 default:
+                    // we want to deal with traits on a case-by-case basis
+                    // for humans, thus only ages here
                     populateHumanAges();
                     break;
             }

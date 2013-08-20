@@ -31,6 +31,7 @@ namespace sims3RandomizerGenerator
         private void simSaveChallengeFile_FileOk(object sender, CancelEventArgs e)
         {
             // okay :(
+            MessageBox.Show("D:");
         }
     }
 }

@@ -2253,14 +2253,14 @@
             this.sim3Static.PerformLayout();
             this.sim4Static.ResumeLayout(false);
             this.sim4Static.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.sim5Static.ResumeLayout(false);
+            this.sim5Static.PerformLayout();
+            this.sim6Static.ResumeLayout(false);
+            this.sim6Static.PerformLayout();
+            this.sim7Static.ResumeLayout(false);
+            this.sim7Static.PerformLayout();
+            this.sim8Static.ResumeLayout(false);
+            this.sim8Static.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

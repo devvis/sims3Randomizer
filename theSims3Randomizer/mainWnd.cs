@@ -95,7 +95,7 @@ namespace theSims3Randomizer
             return returnTraits;
         }
 
-        private string returnChildTraits()
+        private string[] returnChildTraits()
         {
             List<string> traits = new List<string>();
             traits.Add("Absent-Minded");
@@ -160,10 +160,17 @@ namespace theSims3Randomizer
             traits.Add("Virtuoso");
             traits.Add("Workaholic");
 
-            return "yolo";
+            int tSize = traits.Count;
+            IEnumerable<string> selectedTraits;
+            string[] returnTraits;
+            selectedTraits = traits.OrderBy(x => rnd.Next()).Take(2);
+
+            returnTraits = selectedTraits.ToArray();
+
+            return returnTraits;
         }
 
-        private string returnTeenTratis()
+        private string[] returnTeenTratis()
         {
             List<string> traits = new List<string>();
             traits.Add("Absent-Minded");
@@ -244,10 +251,17 @@ namespace theSims3Randomizer
             traits.Add("Virtuoso");
             traits.Add("Workaholic");
 
-            return "yolo";
+            int tSize = traits.Count;
+            IEnumerable<string> selectedTraits;
+            string[] returnTraits;
+            selectedTraits = traits.OrderBy(x => rnd.Next()).Take(2);
+
+            returnTraits = selectedTraits.ToArray();
+
+            return returnTraits;
         }
 
-        private string returnAdultTraits()
+        private string[] returnAdultTraits()
         {
             List<string> traits = new List<string>();
             traits.Add("Absent-Minded");
@@ -328,7 +342,14 @@ namespace theSims3Randomizer
             traits.Add("Virtuoso");
             traits.Add("Workaholic");
 
-            return "yolo";
+            int tSize = traits.Count;
+            IEnumerable<string> selectedTraits;
+            string[] returnTraits;
+            selectedTraits = traits.OrderBy(x => rnd.Next()).Take(2);
+
+            returnTraits = selectedTraits.ToArray();
+
+            return returnTraits;
         }
 
 

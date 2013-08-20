@@ -14,6 +14,7 @@ namespace theSims3Randomizer
         public mainWnd()
         {
             InitializeComponent();
+            resetLabels();
         }
 
         private static Random rnd = new Random();

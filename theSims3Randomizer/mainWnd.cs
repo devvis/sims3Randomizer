@@ -362,42 +362,16 @@ namespace theSims3Randomizer
         }
 
 
-
-/*
-        private void generateSim()
-        {
-            //int numOfSims = rnd.Next(1, 8);
-            int numOfSims = rnd.Next(1, 1);
-            int i = 1;
-
-            string simType, simAge;
-
-            while (i <= numOfSims)
-            {
-                if (i == 1)
-                {
-                    getAgeByType("Human", true); // we need the first sim to always be a grown-up human
-                }
-                else
-                {
-                    getAgeByType(simType, false);
-                }
-            }
-
-
-        }
-*/
-
-
-
         private string[] getSimTraits(string age, string type)
         {
             switch (type)
             {
                 case "Dog":
+                    return getDogTraits();
                 case "Cat":
+                    return getCatTraits();
                 case "Horse":
-                    return getToddlerTraits();
+                    return getHorseTraits();
                 default:
                     switch (age)
                     {
@@ -443,6 +417,7 @@ namespace theSims3Randomizer
 
         }
         */
+
 
         private string getLifetimeWish(string type)
         {
@@ -560,7 +535,7 @@ namespace theSims3Randomizer
             traits.Add("Evil");
             traits.Add("Excitable");
             traits.Add("Friendly");
-            traits.Add("Genious");
+            traits.Add("Genius");
             traits.Add("Good");
             traits.Add("Grumpy");
             traits.Add("Hates the Outdoors");
@@ -833,6 +808,105 @@ namespace theSims3Randomizer
             return returnTraits;
         }
 
+        private string[] getDogTraits()
+        {
+            List<string> dogTraits = new List<string>();
+
+            dogTraits.Add("Adventurous");
+            dogTraits.Add("Aggressive");
+            dogTraits.Add("Clueless");
+            dogTraits.Add("Destructive");
+            dogTraits.Add("Friendly");
+            dogTraits.Add("Genious");
+            dogTraits.Add("Hunter");
+            dogTraits.Add("Hydrophobic");
+            dogTraits.Add("Hyper");
+            dogTraits.Add("Independent");
+            dogTraits.Add("Lazy");
+            dogTraits.Add("Likes Swimming");
+            dogTraits.Add("Loyal");
+            dogTraits.Add("Neat");
+            dogTraits.Add("Noisy");
+            dogTraits.Add("Non-Destructive");
+            dogTraits.Add("Piggy");
+            dogTraits.Add("Playful");
+            dogTraits.Add("Proud");
+            dogTraits.Add("Quiet");
+            dogTraits.Add("Shy");
+            dogTraits.Add("Skittish");
+
+            IEnumerable<string> selectedTraits;
+            string[] returnTraits;
+            selectedTraits = dogTraits.OrderBy(x => rnd.Next()).Take(3);
+            returnTraits = selectedTraits.ToArray();
+
+            return returnTraits;
+        }
+
+        private string[] getCatTraits()
+        {
+            List<string> catTraits = new List<string>();
+
+            catTraits.Add("Adventurous");
+            catTraits.Add("Aggressive");
+            catTraits.Add("Clueless");
+            catTraits.Add("Destructive");
+            catTraits.Add("Friendly");
+            catTraits.Add("Genious");
+            catTraits.Add("Hunter");
+            catTraits.Add("Hyper");
+            catTraits.Add("Independent");
+            catTraits.Add("Lazy");;
+            catTraits.Add("Neat");
+            catTraits.Add("Noisy");
+            catTraits.Add("Non-Destructive");
+            catTraits.Add("Piggy");
+            catTraits.Add("Playful");
+            catTraits.Add("Proud");
+            catTraits.Add("Quiet");
+            catTraits.Add("Shy");
+            catTraits.Add("Skittish");
+
+            IEnumerable<string> selectedTraits;
+            string[] returnTraits;
+            selectedTraits = catTraits.OrderBy(x => rnd.Next()).Take(3);
+            returnTraits = selectedTraits.ToArray();
+
+            return returnTraits;
+        }
+
+        private string[] getHorseTraits()
+        {
+            List<string> horseTraits = new List<string>();
+
+            horseTraits.Add("Aggressive");
+            horseTraits.Add("Agile");
+            horseTraits.Add("Brave");
+            horseTraits.Add("Clueless");
+            horseTraits.Add("Fast");
+            horseTraits.Add("Friendly");
+            horseTraits.Add("Genius");
+            horseTraits.Add("Hates Jumping");
+            horseTraits.Add("Lazy");
+            horseTraits.Add("Neat");
+            horseTraits.Add("Nervous");
+            horseTraits.Add("Noisy");
+            horseTraits.Add("Obedient");
+            horseTraits.Add("Ornery");
+            horseTraits.Add("Piggy");
+            horseTraits.Add("Playful");
+            horseTraits.Add("Quiet");
+            horseTraits.Add("Shy");
+            horseTraits.Add("Untrained");
+
+            IEnumerable<string> selectedTraits;
+            string[] returnTraits;
+            selectedTraits = horseTraits.OrderBy(x => rnd.Next()).Take(3);
+            returnTraits = selectedTraits.ToArray();
+
+            return returnTraits;
+        }
+
         private string getLifespan()
         {
             int span = rnd.Next(1, 5);
@@ -969,13 +1043,6 @@ namespace theSims3Randomizer
             resetLabels();
             generateFirstSim();
             generateSims();
-            //sim2Static.Hide();
-            //sim3Static.Hide();
-            //sim4Static.Hide();
-            //sim5Static.Hide();
-            //sim6Static.Hide();
-            //sim7Static.Hide();
-            //sim8Static.Hide();
         }
 
 

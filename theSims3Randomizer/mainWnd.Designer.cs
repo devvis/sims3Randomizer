@@ -47,6 +47,10 @@
             this.sim1Career = new System.Windows.Forms.Label();
             this.sim1Gender = new System.Windows.Forms.Label();
             this.btnGenerate = new System.Windows.Forms.Button();
+            this.sim1AgeStatic = new System.Windows.Forms.Label();
+            this.sim1Age = new System.Windows.Forms.Label();
+            this.lifespanStatic = new System.Windows.Forms.Label();
+            this.lifespan = new System.Windows.Forms.Label();
             this.sim1Static.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -253,12 +257,55 @@
             this.btnGenerate.TabIndex = 9;
             this.btnGenerate.Text = "&Generate";
             this.btnGenerate.UseVisualStyleBackColor = true;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
+            // sim1AgeStatic
+            // 
+            this.sim1AgeStatic.AutoSize = true;
+            this.sim1AgeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim1AgeStatic.Location = new System.Drawing.Point(18, 166);
+            this.sim1AgeStatic.Name = "sim1AgeStatic";
+            this.sim1AgeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim1AgeStatic.Size = new System.Drawing.Size(29, 13);
+            this.sim1AgeStatic.TabIndex = 16;
+            this.sim1AgeStatic.Text = "Age:";
+            // 
+            // sim1Age
+            // 
+            this.sim1Age.AutoSize = true;
+            this.sim1Age.Location = new System.Drawing.Point(66, 166);
+            this.sim1Age.Name = "sim1Age";
+            this.sim1Age.Size = new System.Drawing.Size(0, 13);
+            this.sim1Age.TabIndex = 17;
+            // 
+            // lifespanStatic
+            // 
+            this.lifespanStatic.AutoSize = true;
+            this.lifespanStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lifespanStatic.Location = new System.Drawing.Point(18, 387);
+            this.lifespanStatic.Name = "lifespanStatic";
+            this.lifespanStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lifespanStatic.Size = new System.Drawing.Size(50, 13);
+            this.lifespanStatic.TabIndex = 18;
+            this.lifespanStatic.Text = "Lifespan:";
+            // 
+            // lifespan
+            // 
+            this.lifespan.AutoSize = true;
+            this.lifespan.Location = new System.Drawing.Point(66, 387);
+            this.lifespan.Name = "lifespan";
+            this.lifespan.Size = new System.Drawing.Size(0, 13);
+            this.lifespan.TabIndex = 19;
             // 
             // mainWnd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 422);
+            this.Controls.Add(this.lifespan);
+            this.Controls.Add(this.lifespanStatic);
+            this.Controls.Add(this.sim1Age);
+            this.Controls.Add(this.sim1AgeStatic);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.sim1Static);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -271,6 +318,7 @@
             this.sim1Static.ResumeLayout(false);
             this.sim1Static.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -294,6 +342,10 @@
         private System.Windows.Forms.Label sim1Career;
         private System.Windows.Forms.Label sim1Gender;
         private System.Windows.Forms.Button btnGenerate;
+        private System.Windows.Forms.Label sim1AgeStatic;
+        private System.Windows.Forms.Label sim1Age;
+        private System.Windows.Forms.Label lifespanStatic;
+        private System.Windows.Forms.Label lifespan;
     }
 }
 

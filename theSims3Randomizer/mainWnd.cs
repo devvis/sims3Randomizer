@@ -97,7 +97,6 @@ namespace theSims3Randomizer
                 {
                     simJob = getJob(simAge);
                 }
-                simJob = getJob(simAge);
                 populateLabels(i, simType, simAge, simWish, simTraits, simGender, simJob);
                 i++;
             }
@@ -457,6 +456,8 @@ namespace theSims3Randomizer
             teenJob.Add("Scuba Diver");
             teenJob.Add("Sculptor");
             teenJob.Add("Writer");
+            //No job
+            teenJob.Add("None");
 
             int r = rnd.Next(teenJob.Count);
 
@@ -516,6 +517,8 @@ namespace theSims3Randomizer
             adultJob.Add("Scuba Diver");
             adultJob.Add("Sculptor");
             adultJob.Add("Writer");
+            //No job
+            adultJob.Add("None");
 
             int r = rnd.Next(adultJob.Count);
 

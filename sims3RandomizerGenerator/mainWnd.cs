@@ -36,29 +36,34 @@ namespace sims3RandomizerGenerator
 
         private void simAge_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (this.simAge.Text)
+            if (this.simType.Text != "Dog" || this.simType.Text != "Cat" || this.simType.Text != "Horse")
             {
-                case "Toddler":
+                // we've already taken care of pet-traits in the Type-selection
+                // and they don't change based on age, hence they're uneccessary here.
+                switch (this.simAge.Text)
+                {
+                    case "Toddler":
 
-                    break;
-                case "Child":
-                    populateChildTraits();
-                    break;
-                case "Teen":
+                        break;
+                    case "Child":
+                        populateChildTraits();
+                        break;
+                    case "Teen":
 
-                    break;
-                case "Young Adult":
+                        break;
+                    case "Young Adult":
 
-                    break;
-                case "Adult":
+                        break;
+                    case "Adult":
 
-                    break;
-                case "Elder":
+                        break;
+                    case "Elder":
 
-                    break;
-                default:
+                        break;
+                    default:
 
-                    break;
+                        break;
+                }
             }
         }
 
@@ -127,11 +132,15 @@ namespace sims3RandomizerGenerator
             traits.Add("Virtuoso");
             traits.Add("Workaholic");
 
-            this.simTrait1.Text = "";
-            this.simTrait2.Text = "";
-            this.simTrait3.Text = "";
+            this.simTrait1.Items.Clear();
+            this.simTrait2.Items.Clear();
+            this.simTrait3.Items.Clear();
+            this.simTrait4.Items.Clear();
+            this.simTrait5.Items.Clear();
             this.simTrait4.Items.Add("None");
             this.simTrait5.Items.Add("None");
+
+
             
             foreach (string trait in traits)
             {
@@ -140,6 +149,47 @@ namespace sims3RandomizerGenerator
                 this.simTrait3.Items.Add(trait);
             }
 
+        }
+
+        private void populatePetAges()
+        {
+            this.simAge.Items.Clear();
+            this.simAge.Items.Add("Adult");
+            this.simAge.Items.Add("Elder");
+        }
+
+        private void populateHumanAges()
+        {
+            this.simAge.Items.Clear();
+            this.simAge.Items.Add("Toddler");
+            this.simAge.Items.Add("Child");
+            this.simAge.Items.Add("Teen");
+            this.simAge.Items.Add("Young Adult");
+            this.simAge.Items.Add("Adult");
+            this.simAge.Items.Add("Elder");
+        }
+
+
+        private void simType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (this.simType.Text)
+            {
+                case "Dog":
+                    // populateDogTraits();
+                    populatePetAges();
+                    break;
+                case "Cat":
+                    // populateCatTraits();
+                    populatePetAges();
+                    break;
+                case "Horse":
+                    // populateHorseTraits();
+                    populatePetAges();
+                    break;
+                default:
+                    populateHumanAges();
+                    break;
+            }
         }
     }
 }

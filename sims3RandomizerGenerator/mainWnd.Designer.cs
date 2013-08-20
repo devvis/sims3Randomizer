@@ -248,11 +248,17 @@
             this.simType.Items.AddRange(new object[] {
             "Human",
             "Fairy",
-            "Werewolf"});
+            "Werewolf",
+            "Witch",
+            "Vampire",
+            "Dog",
+            "Cat",
+            "Horse"});
             this.simType.Location = new System.Drawing.Point(78, 88);
             this.simType.Name = "simType";
             this.simType.Size = new System.Drawing.Size(283, 21);
             this.simType.TabIndex = 18;
+            this.simType.SelectedIndexChanged += new System.EventHandler(this.simType_SelectedIndexChanged);
             // 
             // simTrait1
             // 

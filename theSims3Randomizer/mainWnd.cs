@@ -21,7 +21,7 @@ namespace theSims3Randomizer
             foreach (string trait in ragnar)
             {
                 traits.Append(trait);
-                traits.Append('.');
+                traits.Append(".");
             }
 
             MessageBox.Show(traits.ToString());
@@ -30,7 +30,7 @@ namespace theSims3Randomizer
 
         private static Random rnd = new Random();
 
-        private string returnSimTraits(int age)
+        private string[] returnSimTraits(int age)
         {
             // 0: toddler
             // 1: child
@@ -39,20 +39,19 @@ namespace theSims3Randomizer
             switch (age)
             {
                 case 0:
-                    break;
+                    return returnToddlerTraits();
 
                 case 1:
-                    break;
+                    return returnTeenTraits();
 
                 case 2:
-                    break;
+                    return returnTeenTraits();
 
                 case 3:
-                    break;
+                    return returnAdultTraits();
+                default:
+                    throw new System.ArgumentException("Index is out of range, please die!");
             }
-
-
-            return "yolo";
 
         }
 
@@ -89,7 +88,6 @@ namespace theSims3Randomizer
             IEnumerable<string> selectedTraits;
             string[] returnTraits;
             selectedTraits = traits.OrderBy(x => rnd.Next()).Take(2);
-
             returnTraits = selectedTraits.ToArray();
 
             return returnTraits;
@@ -163,14 +161,13 @@ namespace theSims3Randomizer
             int tSize = traits.Count;
             IEnumerable<string> selectedTraits;
             string[] returnTraits;
-            selectedTraits = traits.OrderBy(x => rnd.Next()).Take(2);
-
+            selectedTraits = traits.OrderBy(x => rnd.Next()).Take(3);
             returnTraits = selectedTraits.ToArray();
 
             return returnTraits;
         }
 
-        private string[] returnTeenTratis()
+        private string[] returnTeenTraits()
         {
             List<string> traits = new List<string>();
             traits.Add("Absent-Minded");
@@ -254,8 +251,7 @@ namespace theSims3Randomizer
             int tSize = traits.Count;
             IEnumerable<string> selectedTraits;
             string[] returnTraits;
-            selectedTraits = traits.OrderBy(x => rnd.Next()).Take(2);
-
+            selectedTraits = traits.OrderBy(x => rnd.Next()).Take(4);
             returnTraits = selectedTraits.ToArray();
 
             return returnTraits;
@@ -345,8 +341,7 @@ namespace theSims3Randomizer
             int tSize = traits.Count;
             IEnumerable<string> selectedTraits;
             string[] returnTraits;
-            selectedTraits = traits.OrderBy(x => rnd.Next()).Take(2);
-
+            selectedTraits = traits.OrderBy(x => rnd.Next()).Take(5);
             returnTraits = selectedTraits.ToArray();
 
             return returnTraits;

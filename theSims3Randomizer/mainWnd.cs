@@ -36,7 +36,10 @@ namespace theSims3Randomizer
             // 0: toddler
             // 1: child
             // 2: teen
-            // 3: adult
+            // 3: young-adult
+            // 4: adult
+            // 5: elder
+
             switch (age)
             {
                 case 0:
@@ -457,5 +460,60 @@ namespace theSims3Randomizer
             }
         }
 
+        private string getAgeByType(string type, bool first)
+        {
+            // 0: toddler / adult pet
+            // 1: child / elder pet
+            // 2: teen
+            // 3: young-adult
+            // 4: adult
+            // 5: elder
+            int r;
+            switch (type)
+            {
+                case "Dog":
+                case "Cat":
+                case "Horse":
+                    r = rnd.Next(0, 1);
+                    if (r == 0)
+                    {
+                        return "Adult";
+                    }
+                    else
+                    {
+                        return "Elder";
+                    }
+
+                case "Human":
+                    if (first == true)
+                    {
+                        r = rnd.Next(3, 5);
+                    }
+                    else
+                    {
+                        r = rnd.Next(0, 5);
+                    }
+                    switch (r)
+                    {
+                        case 0:
+                            return "Toddler";
+                        case 1:
+                            return "Child";
+                        case 2:
+                            return "Teen";
+                        case 3:
+                            return "Young Adult";
+                        case 4:
+                            return "Adult";
+                        case 5:
+                            return "Elder";
+                        default:
+                            throw new IndexOutOfRangeException("How is this even possible. Fuck logic.");
+                    }
+                default:
+                    throw new ArgumentException("Wrong argument passed to method, I will now commit suicide.");
+            }
+
+        }
     }
 }

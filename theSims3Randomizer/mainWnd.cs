@@ -88,6 +88,15 @@ namespace theSims3Randomizer
                 simWish = getLifetimeWish(simType);
                 simTraits = getSimTraits(simAge, simType);
                 simGender = getSimGender();
+                if (simType == "Horse" || simType == "Dog" || simType == "Cat")
+                {
+                    simJob = "None";
+                }
+
+                else
+                {
+                    simJob = getJob(simAge);
+                }
                 simJob = getJob(simAge);
                 populateLabels(i, simType, simAge, simWish, simTraits, simGender, simJob);
                 i++;

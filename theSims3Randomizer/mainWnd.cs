@@ -14,51 +14,118 @@ namespace theSims3Randomizer
         public mainWnd()
         {
             InitializeComponent();
-            string[] ragnar = returnToddlerTraits();
-
-            StringBuilder traits = new StringBuilder();
-
-            foreach (string trait in ragnar)
-            {
-                traits.Append(trait);
-                traits.Append(" ");
-            }
-
-            MessageBox.Show(traits.ToString());
-            MessageBox.Show(returnLifetimeWish());
-
         }
 
         private static Random rnd = new Random();
 
-        private string[] returnSimTraits(int age)
-        {
-            // 0: toddler
-            // 1: child
-            // 2: teen
-            // 3: young-adult
-            // 4: adult
-            // 5: elder
 
+
+
+        private void generateFirstSim()
+        {
+            string simType, simWish, simAge, simGender, lifespan;
+            string[] simTraits;
+            int i = 1;
+
+            simType = getSimType(true);
+            simAge = getAgeByType(simType, true);
+            simWish = getLifetimeWish();
+            simTraits = getSimTraits(simAge);
+            simGender = getSimGender();
+            lifespan = getLifespan();
+
+            this.sim1Gender.Text = simGender;
+            this.sim1Career.Text = simWish;
+            this.sim1Type.Text = simType;
+
+            foreach (string trait in simTraits)
+            {
+                switch (i)
+                {
+                    case 1:
+                        this.sim1Trait1.Text = trait;
+                        i++;
+                        break;
+                    case 2:
+                        this.sim1Trait2.Text = trait;
+                        i++;
+                        break;
+                    case 3:
+                        this.sim1Trait3.Text = trait;
+                        i++;
+                        break;
+                    case 4:
+                        this.sim1Trait4.Text = trait;
+                        i++;
+                        break;
+                    case 5:
+                        this.sim1Trait5.Text = trait;
+                        i++;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            this.sim1Age.Text = simAge;
+
+
+            this.lifespan.Text = lifespan;
+
+
+
+        }
+
+/*
+        private void generateSim()
+        {
+            //int numOfSims = rnd.Next(1, 8);
+            int numOfSims = rnd.Next(1, 1);
+            int i = 1;
+
+            string simType, simAge;
+
+            while (i <= numOfSims)
+            {
+                if (i == 1)
+                {
+                    getAgeByType("Human", true); // we need the first sim to always be a grown-up human
+                }
+                else
+                {
+                    getAgeByType(simType, false);
+                }
+            }
+
+
+        }
+*/
+
+
+
+        private string[] getSimTraits(string age)
+        {
             switch (age)
             {
-                case 0:
-                    return returnToddlerTraits();
+                case "Toddler":
+                    return getToddlerTraits();
 
-                case 1:
-                    return returnTeenTraits();
+                case "Child":
+                    return getChildTraits();
 
-                case 2:
-                    return returnTeenTraits();
+                case "Teen":
+                    return getTeenTraits();
 
-                case 3:
-                    return returnAdultTraits();
+                case "Young Adult":
+                case "Adult":
+                case "Elder":
+                    return getAdultTraits();
                 default:
                     throw new System.ArgumentException("Index is out of range, please die!");
             }
         }
 
-        private string returnLifetimeWish()
+        private string getLifetimeWish()
         {
             List<string> lifetimeWishes = new List<string>();
             lifetimeWishes.Add("Alchemy Artisan");
@@ -150,7 +217,7 @@ namespace theSims3Randomizer
             return lifetimeWishes[r];
         }
 
-        private string[] returnToddlerTraits()
+        private string[] getToddlerTraits()
         {
             List<string> traits = new List<string>();
             traits.Add("Abscent-Minded");
@@ -187,7 +254,7 @@ namespace theSims3Randomizer
             return returnTraits;
         }
 
-        private string[] returnChildTraits()
+        private string[] getChildTraits()
         {
             List<string> traits = new List<string>();
             traits.Add("Absent-Minded");
@@ -260,7 +327,7 @@ namespace theSims3Randomizer
             return returnTraits;
         }
 
-        private string[] returnTeenTraits()
+        private string[] getTeenTraits()
         {
             List<string> traits = new List<string>();
             traits.Add("Absent-Minded");
@@ -349,7 +416,7 @@ namespace theSims3Randomizer
             return returnTraits;
         }
 
-        private string[] returnAdultTraits()
+        private string[] getAdultTraits()
         {
             List<string> traits = new List<string>();
             traits.Add("Absent-Minded");
@@ -440,7 +507,7 @@ namespace theSims3Randomizer
 
         private string getLifespan()
         {
-            int span = rnd.Next(1, 4);
+            int span = rnd.Next(1, 5);
             switch (span)
             {
                 case 1:
@@ -451,6 +518,66 @@ namespace theSims3Randomizer
                     return "Normal";
                 case 4:
                     return "Long";
+                default:
+                    throw new IndexOutOfRangeException("How is this even possible. Fuck logic.");
+            }
+        }
+
+        private string getSimGender()
+        {
+            int r = rnd.Next(1, 3);
+
+            if (r == 1)
+            {
+                return "Male";
+            }
+            else
+            {
+                return "Female";
+            }
+        }
+
+        private string getSimType(bool first)
+        {
+            // 0: human
+            // 1: fairy
+            // 2: werewolf
+            // 3: witch
+            // 4: vampire
+            // 5: zombie
+            // 6: dog
+            // 7: cat
+            // 8: horse
+            int r;
+            if (first == true)
+            {
+                // we want to make sure that our first sim is always some kind of "human-like"
+                r = rnd.Next(0, 6);
+            }
+            else
+            {
+                r = rnd.Next(0, 9);
+            }
+            switch (r)
+            {
+                case 0:
+                    return "Human";
+                case 1:
+                    return "Fairy";
+                case 2:
+                    return "Werewolf";
+                case 3:
+                    return "Witch";
+                case 4:
+                    return "Vampire";
+                case 5:
+                    return "Zombie";
+                case 6:
+                    return "Dog";
+                case 7:
+                    return "Cat";
+                case 8:
+                    return "Horse";
                 default:
                     throw new IndexOutOfRangeException("How is this even possible. Fuck logic.");
             }
@@ -470,7 +597,7 @@ namespace theSims3Randomizer
                 case "Dog":
                 case "Cat":
                 case "Horse":
-                    r = rnd.Next(0, 1);
+                    r = rnd.Next(0, 2);
                     if (r == 0)
                     {
                         return "Adult";
@@ -480,14 +607,14 @@ namespace theSims3Randomizer
                         return "Elder";
                     }
 
-                case "Human":
+                default:
                     if (first == true)
                     {
-                        r = rnd.Next(3, 5);
+                        r = rnd.Next(3, 6);
                     }
                     else
                     {
-                        r = rnd.Next(0, 5);
+                        r = rnd.Next(0, 6);
                     }
                     switch (r)
                     {
@@ -506,9 +633,12 @@ namespace theSims3Randomizer
                         default:
                             throw new IndexOutOfRangeException("How is this even possible. Fuck logic.");
                     }
-                default:
-                    throw new ArgumentException("Wrong argument passed to method, I will now commit suicide.");
             }
+        }
+
+        private void btnGenerate_Click(object sender, EventArgs e)
+        {
+            generateFirstSim();
         }
 
 

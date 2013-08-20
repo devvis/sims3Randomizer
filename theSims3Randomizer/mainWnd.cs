@@ -35,7 +35,7 @@ namespace theSims3Randomizer
             lifespan = getLifespan();
 
             this.sim1Gender.Text = simGender;
-            this.sim1Career.Text = simWish;
+            this.sim1Lifetime.Text = simWish;
             this.sim1Type.Text = simType;
 
             foreach (string trait in simTraits)

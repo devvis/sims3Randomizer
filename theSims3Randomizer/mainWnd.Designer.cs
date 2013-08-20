@@ -37,7 +37,7 @@
             this.sim1Trait4Static = new System.Windows.Forms.Label();
             this.sim1Trait5Static = new System.Windows.Forms.Label();
             this.sim1Static = new System.Windows.Forms.GroupBox();
-            this.sim1Type = new System.Windows.Forms.Label();
+            this.sim1Lifetime = new System.Windows.Forms.Label();
             this.sim1TypeStatic = new System.Windows.Forms.Label();
             this.sim1Trait5 = new System.Windows.Forms.Label();
             this.sim1Trait4 = new System.Windows.Forms.Label();
@@ -51,6 +51,8 @@
             this.sim1Age = new System.Windows.Forms.Label();
             this.lifespanStatic = new System.Windows.Forms.Label();
             this.lifespan = new System.Windows.Forms.Label();
+            this.sim1LifetimeStatic = new System.Windows.Forms.Label();
+            this.sim1Type = new System.Windows.Forms.Label();
             this.sim1Static.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +82,7 @@
             // 
             this.sim1Trait1Static.AutoSize = true;
             this.sim1Trait1Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Trait1Static.Location = new System.Drawing.Point(6, 63);
+            this.sim1Trait1Static.Location = new System.Drawing.Point(6, 93);
             this.sim1Trait1Static.Name = "sim1Trait1Static";
             this.sim1Trait1Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1Trait1Static.Size = new System.Drawing.Size(40, 13);
@@ -91,7 +93,7 @@
             // 
             this.sim1Trait2Static.AutoSize = true;
             this.sim1Trait2Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Trait2Static.Location = new System.Drawing.Point(6, 76);
+            this.sim1Trait2Static.Location = new System.Drawing.Point(6, 106);
             this.sim1Trait2Static.Name = "sim1Trait2Static";
             this.sim1Trait2Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1Trait2Static.Size = new System.Drawing.Size(40, 13);
@@ -102,7 +104,7 @@
             // 
             this.sim1Trait3Static.AutoSize = true;
             this.sim1Trait3Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Trait3Static.Location = new System.Drawing.Point(6, 89);
+            this.sim1Trait3Static.Location = new System.Drawing.Point(6, 119);
             this.sim1Trait3Static.Name = "sim1Trait3Static";
             this.sim1Trait3Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1Trait3Static.Size = new System.Drawing.Size(40, 13);
@@ -113,7 +115,7 @@
             // 
             this.sim1Trait4Static.AutoSize = true;
             this.sim1Trait4Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Trait4Static.Location = new System.Drawing.Point(6, 102);
+            this.sim1Trait4Static.Location = new System.Drawing.Point(6, 132);
             this.sim1Trait4Static.Name = "sim1Trait4Static";
             this.sim1Trait4Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1Trait4Static.Size = new System.Drawing.Size(40, 13);
@@ -124,7 +126,7 @@
             // 
             this.sim1Trait5Static.AutoSize = true;
             this.sim1Trait5Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Trait5Static.Location = new System.Drawing.Point(6, 115);
+            this.sim1Trait5Static.Location = new System.Drawing.Point(6, 145);
             this.sim1Trait5Static.Name = "sim1Trait5Static";
             this.sim1Trait5Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1Trait5Static.Size = new System.Drawing.Size(40, 13);
@@ -134,10 +136,14 @@
             // sim1Static
             // 
             this.sim1Static.Controls.Add(this.sim1Type);
+            this.sim1Static.Controls.Add(this.sim1Lifetime);
+            this.sim1Static.Controls.Add(this.sim1LifetimeStatic);
             this.sim1Static.Controls.Add(this.sim1TypeStatic);
             this.sim1Static.Controls.Add(this.sim1Trait5);
             this.sim1Static.Controls.Add(this.sim1Trait4);
+            this.sim1Static.Controls.Add(this.sim1Age);
             this.sim1Static.Controls.Add(this.sim1Trait3);
+            this.sim1Static.Controls.Add(this.sim1AgeStatic);
             this.sim1Static.Controls.Add(this.sim1Trait2);
             this.sim1Static.Controls.Add(this.sim1Trait1);
             this.sim1Static.Controls.Add(this.sim1Career);
@@ -153,26 +159,26 @@
             this.sim1Static.Location = new System.Drawing.Point(12, 12);
             this.sim1Static.Name = "sim1Static";
             this.sim1Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sim1Static.Size = new System.Drawing.Size(181, 134);
+            this.sim1Static.Size = new System.Drawing.Size(266, 166);
             this.sim1Static.TabIndex = 8;
             this.sim1Static.TabStop = false;
             this.sim1Static.Text = "Sim 1";
             // 
-            // sim1Type
+            // sim1Lifetime
             // 
-            this.sim1Type.AutoSize = true;
-            this.sim1Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Type.Location = new System.Drawing.Point(51, 42);
-            this.sim1Type.Name = "sim1Type";
-            this.sim1Type.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sim1Type.Size = new System.Drawing.Size(0, 13);
-            this.sim1Type.TabIndex = 15;
+            this.sim1Lifetime.AutoSize = true;
+            this.sim1Lifetime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim1Lifetime.Location = new System.Drawing.Point(51, 60);
+            this.sim1Lifetime.Name = "sim1Lifetime";
+            this.sim1Lifetime.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim1Lifetime.Size = new System.Drawing.Size(0, 13);
+            this.sim1Lifetime.TabIndex = 15;
             // 
             // sim1TypeStatic
             // 
             this.sim1TypeStatic.AutoSize = true;
             this.sim1TypeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1TypeStatic.Location = new System.Drawing.Point(6, 42);
+            this.sim1TypeStatic.Location = new System.Drawing.Point(6, 73);
             this.sim1TypeStatic.Name = "sim1TypeStatic";
             this.sim1TypeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1TypeStatic.Size = new System.Drawing.Size(34, 13);
@@ -183,7 +189,7 @@
             // 
             this.sim1Trait5.AutoSize = true;
             this.sim1Trait5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Trait5.Location = new System.Drawing.Point(51, 115);
+            this.sim1Trait5.Location = new System.Drawing.Point(51, 145);
             this.sim1Trait5.Name = "sim1Trait5";
             this.sim1Trait5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1Trait5.Size = new System.Drawing.Size(0, 13);
@@ -193,7 +199,7 @@
             // 
             this.sim1Trait4.AutoSize = true;
             this.sim1Trait4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Trait4.Location = new System.Drawing.Point(51, 102);
+            this.sim1Trait4.Location = new System.Drawing.Point(51, 132);
             this.sim1Trait4.Name = "sim1Trait4";
             this.sim1Trait4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1Trait4.Size = new System.Drawing.Size(0, 13);
@@ -203,7 +209,7 @@
             // 
             this.sim1Trait3.AutoSize = true;
             this.sim1Trait3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Trait3.Location = new System.Drawing.Point(51, 89);
+            this.sim1Trait3.Location = new System.Drawing.Point(51, 119);
             this.sim1Trait3.Name = "sim1Trait3";
             this.sim1Trait3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1Trait3.Size = new System.Drawing.Size(0, 13);
@@ -213,7 +219,7 @@
             // 
             this.sim1Trait2.AutoSize = true;
             this.sim1Trait2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Trait2.Location = new System.Drawing.Point(51, 76);
+            this.sim1Trait2.Location = new System.Drawing.Point(51, 106);
             this.sim1Trait2.Name = "sim1Trait2";
             this.sim1Trait2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1Trait2.Size = new System.Drawing.Size(0, 13);
@@ -223,7 +229,7 @@
             // 
             this.sim1Trait1.AutoSize = true;
             this.sim1Trait1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1Trait1.Location = new System.Drawing.Point(51, 63);
+            this.sim1Trait1.Location = new System.Drawing.Point(51, 93);
             this.sim1Trait1.Name = "sim1Trait1";
             this.sim1Trait1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1Trait1.Size = new System.Drawing.Size(0, 13);
@@ -263,7 +269,7 @@
             // 
             this.sim1AgeStatic.AutoSize = true;
             this.sim1AgeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim1AgeStatic.Location = new System.Drawing.Point(18, 166);
+            this.sim1AgeStatic.Location = new System.Drawing.Point(6, 42);
             this.sim1AgeStatic.Name = "sim1AgeStatic";
             this.sim1AgeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sim1AgeStatic.Size = new System.Drawing.Size(29, 13);
@@ -273,7 +279,8 @@
             // sim1Age
             // 
             this.sim1Age.AutoSize = true;
-            this.sim1Age.Location = new System.Drawing.Point(66, 166);
+            this.sim1Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim1Age.Location = new System.Drawing.Point(51, 42);
             this.sim1Age.Name = "sim1Age";
             this.sim1Age.Size = new System.Drawing.Size(0, 13);
             this.sim1Age.TabIndex = 17;
@@ -294,8 +301,29 @@
             this.lifespan.AutoSize = true;
             this.lifespan.Location = new System.Drawing.Point(66, 387);
             this.lifespan.Name = "lifespan";
-            this.lifespan.Size = new System.Drawing.Size(0, 13);
+            this.lifespan.Size = new System.Drawing.Size(19, 13);
             this.lifespan.TabIndex = 19;
+            this.lifespan.Text = "da";
+            // 
+            // sim1LifetimeStatic
+            // 
+            this.sim1LifetimeStatic.AutoSize = true;
+            this.sim1LifetimeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim1LifetimeStatic.Location = new System.Drawing.Point(6, 60);
+            this.sim1LifetimeStatic.Name = "sim1LifetimeStatic";
+            this.sim1LifetimeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim1LifetimeStatic.Size = new System.Drawing.Size(34, 13);
+            this.sim1LifetimeStatic.TabIndex = 20;
+            this.sim1LifetimeStatic.Text = "Wish:";
+            // 
+            // sim1Type
+            // 
+            this.sim1Type.AutoSize = true;
+            this.sim1Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim1Type.Location = new System.Drawing.Point(51, 73);
+            this.sim1Type.Name = "sim1Type";
+            this.sim1Type.Size = new System.Drawing.Size(0, 13);
+            this.sim1Type.TabIndex = 21;
             // 
             // mainWnd
             // 
@@ -304,8 +332,6 @@
             this.ClientSize = new System.Drawing.Size(629, 422);
             this.Controls.Add(this.lifespan);
             this.Controls.Add(this.lifespanStatic);
-            this.Controls.Add(this.sim1Age);
-            this.Controls.Add(this.sim1AgeStatic);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.sim1Static);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -332,7 +358,7 @@
         private System.Windows.Forms.Label sim1Trait4Static;
         private System.Windows.Forms.Label sim1Trait5Static;
         private System.Windows.Forms.GroupBox sim1Static;
-        private System.Windows.Forms.Label sim1Type;
+        private System.Windows.Forms.Label sim1Lifetime;
         private System.Windows.Forms.Label sim1TypeStatic;
         private System.Windows.Forms.Label sim1Trait5;
         private System.Windows.Forms.Label sim1Trait4;
@@ -346,6 +372,8 @@
         private System.Windows.Forms.Label sim1Age;
         private System.Windows.Forms.Label lifespanStatic;
         private System.Windows.Forms.Label lifespan;
+        private System.Windows.Forms.Label sim1LifetimeStatic;
+        private System.Windows.Forms.Label sim1Type;
     }
 }
 

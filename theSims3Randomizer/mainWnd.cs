@@ -33,7 +33,7 @@ namespace theSims3Randomizer
             simTraits = getSimTraits(simAge, simType);
             simGender = getSimGender();
             lifespan = getLifespan();
-            //simJob = getJob(simAge);
+            simJob = getJob(simAge);
 
             this.sim1Gender.Text = simGender;
             this.sim1Lifetime.Text = simWish;
@@ -393,7 +393,7 @@ namespace theSims3Randomizer
                     }
             }
         }
-        /*
+
         private string getJob(string age)
         {
             switch (age)
@@ -411,12 +411,95 @@ namespace theSims3Randomizer
             }
         }
 
-        private string getJob()
+        private string getTeenJob()
         {
-            List<string> SimJob = new List<string>();
+            List<string> teenJob = new List<string>();
+            //Part-time jobs
+            teenJob.Add("Bookstore Clerk");
+            teenJob.Add("Film");
+            teenJob.Add("Grocery Store Clerk");
+            teenJob.Add("Mausoleum Clerk");
+            teenJob.Add("Receptionist");
+            teenJob.Add("Spa Specialist");
+            teenJob.Add("Test Subject");
+            //Self-employed careers
+            teenJob.Add("Alchemist");
+            teenJob.Add("Angler");
+            teenJob.Add("Band");
+            teenJob.Add("Gardener");
+            teenJob.Add("Horseman");
+            teenJob.Add("Inventor");
+            teenJob.Add("Nectar Maker");
+            teenJob.Add("Painter");
+            teenJob.Add("Photographer");
+            teenJob.Add("Scuba Diver");
+            teenJob.Add("Sculptor");
+            teenJob.Add("Writer");
 
+            int r = rnd.Next(teenJob.Count);
+
+        return teenJob[r];
+        
+    }
+
+        private string getAdultJob()
+        {
+            List<string> adultJob = new List<string>();
+            //Jobs and professions
+            adultJob.Add("Acrobat");
+            adultJob.Add("Architecture");
+            adultJob.Add("Art Appraiser");
+            adultJob.Add("Athletic");
+            adultJob.Add("Business");
+            adultJob.Add("Criminal");
+            adultJob.Add("Culinary");
+            adultJob.Add("Culinary");
+            adultJob.Add("Education");
+            adultJob.Add("Fashion");
+            adultJob.Add("Film");
+            adultJob.Add("Firefighter");
+            adultJob.Add("Fortune Teller");
+            adultJob.Add("Game Development");
+            adultJob.Add("Ghost Hunter");
+            adultJob.Add("Investigator");
+            adultJob.Add("Journalism");
+            adultJob.Add("Law Enforcement");
+            adultJob.Add("Lifeguard");
+            adultJob.Add("Magician");
+            adultJob.Add("Medicine");
+            adultJob.Add("Military");
+            adultJob.Add("Music");
+            adultJob.Add("Politics");
+            adultJob.Add("Science");
+            adultJob.Add("Singer");
+            adultJob.Add("Sports Agent");
+            //Part-time jobs
+            adultJob.Add("Bookstore Clerk");
+            adultJob.Add("Film");
+            adultJob.Add("Grocery Store Clerk");
+            adultJob.Add("Mausoleum Clerk");
+            adultJob.Add("Receptionist");
+            adultJob.Add("Spa Specialist");
+            adultJob.Add("Test Subject");
+            //Self-employed careers
+            adultJob.Add("Alchemist");
+            adultJob.Add("Angler");
+            adultJob.Add("Band");
+            adultJob.Add("Gardener");
+            adultJob.Add("Horseman");
+            adultJob.Add("Inventor");
+            adultJob.Add("Nectar Maker");
+            adultJob.Add("Painter");
+            adultJob.Add("Photographer");
+            adultJob.Add("Scuba Diver");
+            adultJob.Add("Sculptor");
+            adultJob.Add("Writer");
+
+            int r = rnd.Next(adultJob.Count);
+
+            return adultJob[r];
         }
-        */
+
 
         private string getLifespan()
         {

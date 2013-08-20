@@ -23,7 +23,7 @@ namespace theSims3Randomizer
 
         private void generateFirstSim()
         {
-            string simType, simWish, simAge, simGender, lifespan;
+            string simType, simWish, simAge, simGender, lifespan, simJob;
             string[] simTraits;
             int i = 1;
 
@@ -33,6 +33,7 @@ namespace theSims3Randomizer
             simTraits = getSimTraits(simAge, simType);
             simGender = getSimGender();
             lifespan = getLifespan();
+            //simJob = getJob(simAge);
 
             this.sim1Gender.Text = simGender;
             this.sim1Lifetime.Text = simWish;
@@ -418,6 +419,30 @@ namespace theSims3Randomizer
                     }
             }
         }
+        /*
+        private string getJob(string age)
+        {
+            switch (age)
+            {
+
+                case "Teen":
+                    return getTeenJob();
+
+                case "Young Adult":
+                case "Adult":
+                case "Elder":
+                    return getAdultJob();
+                default:
+                    throw new System.ArgumentException("Index is out of range, please die!");
+            }
+        }
+
+        private string getJob()
+        {
+            List<string> SimJob = new List<string>();
+
+        }
+        */
 
         private string getLifetimeWish(string type)
         {

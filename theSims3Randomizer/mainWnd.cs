@@ -941,6 +941,7 @@ namespace theSims3Randomizer
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
+            resetLabels();
             generateFirstSim();
             generateSims();
             //sim2Static.Hide();
@@ -952,6 +953,99 @@ namespace theSims3Randomizer
             //sim8Static.Hide();
         }
 
+
+        private void resetLabels()
+        {
+            this.sim1Age.Text = "None";
+            this.sim2Age.Text = "None";
+            this.sim3Age.Text = "None";
+            this.sim4Age.Text = "None";
+            this.sim5Age.Text = "None";
+            this.sim6Age.Text = "None";
+            this.sim7Age.Text = "None";
+            this.sim8Age.Text = "None";
+
+            this.sim1Career.Text = "None";
+            this.sim2Career.Text = "None";
+            this.sim3Career.Text = "None";
+            this.sim4Career.Text = "None";
+            this.sim5Career.Text = "None";
+            this.sim6Career.Text = "None";
+            this.sim7Career.Text = "None";
+            this.sim8Career.Text = "None";
+
+            this.sim1Gender.Text = "None";
+            this.sim2Gender.Text = "None";
+            this.sim3Gender.Text = "None";
+            this.sim4Gender.Text = "None";
+            this.sim5Gender.Text = "None";
+            this.sim6Gender.Text = "None";
+            this.sim7Gender.Text = "None";
+            this.sim8Gender.Text = "None";
+
+            this.sim1Lifetime.Text = "None";
+            this.sim2Lifetime.Text = "None";
+            this.sim3Lifetime.Text = "None";
+            this.sim4Lifetime.Text = "None";
+            this.sim5Lifetime.Text = "None";
+            this.sim6Lifetime.Text = "None";
+            this.sim7Lifetime.Text = "None";
+            this.sim8Lifetime.Text = "None";
+
+            this.sim1Trait1.Text = "None";
+            this.sim2Trait1.Text = "None";
+            this.sim3Trait1.Text = "None";
+            this.sim4Trait1.Text = "None";
+            this.sim5Trait1.Text = "None";
+            this.sim6Trait1.Text = "None";
+            this.sim7Trait1.Text = "None";
+            this.sim8Trait1.Text = "None";
+
+            this.sim1Trait2.Text = "None";
+            this.sim2Trait2.Text = "None";
+            this.sim3Trait2.Text = "None";
+            this.sim4Trait2.Text = "None";
+            this.sim5Trait2.Text = "None";
+            this.sim6Trait2.Text = "None";
+            this.sim7Trait2.Text = "None";
+            this.sim8Trait2.Text = "None";
+
+            this.sim1Trait3.Text = "None";
+            this.sim2Trait3.Text = "None";
+            this.sim3Trait3.Text = "None";
+            this.sim4Trait3.Text = "None";
+            this.sim5Trait3.Text = "None";
+            this.sim6Trait3.Text = "None";
+            this.sim7Trait3.Text = "None";
+            this.sim8Trait3.Text = "None";
+
+            this.sim1Trait4.Text = "None";
+            this.sim2Trait4.Text = "None";
+            this.sim3Trait4.Text = "None";
+            this.sim4Trait4.Text = "None";
+            this.sim5Trait4.Text = "None";
+            this.sim6Trait4.Text = "None";
+            this.sim7Trait4.Text = "None";
+            this.sim8Trait4.Text = "None";
+
+            this.sim1Trait5.Text = "None";
+            this.sim2Trait5.Text = "None";
+            this.sim3Trait5.Text = "None";
+            this.sim4Trait5.Text = "None";
+            this.sim5Trait5.Text = "None";
+            this.sim6Trait5.Text = "None";
+            this.sim7Trait5.Text = "None";
+            this.sim8Trait5.Text = "None";
+
+            this.sim1Type.Text = "None";
+            this.sim2Type.Text = "None";
+            this.sim3Type.Text = "None";
+            this.sim4Type.Text = "None";
+            this.sim5Type.Text = "None";
+            this.sim6Type.Text = "None";
+            this.sim7Type.Text = "None";
+            this.sim8Type.Text = "None";
+        }
 
     }
 }

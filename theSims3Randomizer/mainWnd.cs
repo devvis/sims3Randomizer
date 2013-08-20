@@ -69,6 +69,7 @@ namespace theSims3Randomizer
             }
 
             this.sim1Age.Text = simAge;
+            this.sim1Career.Text = simJob;
             this.lifespan.Text = lifespan;
         }
 
@@ -76,7 +77,7 @@ namespace theSims3Randomizer
         private void generateSims()
         {
             int numOfSims, i = 0;
-            string simType, simWish, simAge, simGender;
+            string simType, simWish, simAge, simGender, simJob;
             string[] simTraits;
 
             numOfSims = rnd.Next(2, 9);
@@ -87,12 +88,13 @@ namespace theSims3Randomizer
                 simWish = getLifetimeWish(simType);
                 simTraits = getSimTraits(simAge, simType);
                 simGender = getSimGender();
-                populateLabels(i, simType, simAge, simWish, simTraits, simGender);
+                simJob = getJob(simAge);
+                populateLabels(i, simType, simAge, simWish, simTraits, simGender, simJob);
                 i++;
             }
         }
 
-        private void populateLabels(int num, string simType, string simAge, string simWish, string[] simTraits, string simGender)
+        private void populateLabels(int num, string simType, string simAge, string simWish, string[] simTraits, string simGender, string simJob)
         {
             int i = 1;
             switch(num)
@@ -132,6 +134,7 @@ namespace theSims3Randomizer
                     }
 
                     this.sim2Age.Text = simAge;
+                    this.sim2Career.Text = simJob;
                     break;
                 case 3:
                     this.sim3Gender.Text = simGender;
@@ -168,6 +171,7 @@ namespace theSims3Randomizer
                     }
 
                     this.sim3Age.Text = simAge;
+                    this.sim3Career.Text = simJob;
                     break;
 
                 case 4:
@@ -205,6 +209,7 @@ namespace theSims3Randomizer
                     }
 
                     this.sim4Age.Text = simAge;
+                    this.sim4Career.Text = simJob;
                     break;
 
                 case 5:
@@ -242,6 +247,7 @@ namespace theSims3Randomizer
                     }
 
                     this.sim5Age.Text = simAge;
+                    this.sim5Career.Text = simJob;
                     break;
 
                 case 6:
@@ -279,6 +285,7 @@ namespace theSims3Randomizer
                     }
 
                     this.sim6Age.Text = simAge;
+                    this.sim6Career.Text = simJob;
                     break;
 
                 case 7:
@@ -316,6 +323,7 @@ namespace theSims3Randomizer
                     }
 
                     this.sim7Age.Text = simAge;
+                    this.sim7Career.Text = simJob;
                     break;
 
                 case 8:
@@ -353,6 +361,7 @@ namespace theSims3Randomizer
                     }
 
                     this.sim8Age.Text = simAge;
+                    this.sim8Career.Text = simJob;
                     break;
 
                 default:
@@ -398,6 +407,10 @@ namespace theSims3Randomizer
         {
             switch (age)
             {
+
+                case "Toddler":
+                case "Child":
+                    return "None";
 
                 case "Teen":
                     return getTeenJob();

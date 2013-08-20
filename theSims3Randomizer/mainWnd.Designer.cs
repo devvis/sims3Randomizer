@@ -95,7 +95,7 @@
             this.sim3Trait3Static = new System.Windows.Forms.Label();
             this.sim3Trait1Static = new System.Windows.Forms.Label();
             this.sim3Trait2Static = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.sim4Static = new System.Windows.Forms.GroupBox();
             this.sim4Type = new System.Windows.Forms.Label();
             this.sim4Lifetime = new System.Windows.Forms.Label();
             this.sim4LifetimeStatic = new System.Windows.Forms.Label();
@@ -203,7 +203,7 @@
             this.sim1Static.SuspendLayout();
             this.sim2Static.SuspendLayout();
             this.sim3Static.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.sim4Static.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -977,36 +977,36 @@
             this.sim3Trait2Static.TabIndex = 4;
             this.sim3Trait2Static.Text = "Trait 2:";
             // 
-            // groupBox2
+            // sim4Static
             // 
-            this.groupBox2.Controls.Add(this.sim4Type);
-            this.groupBox2.Controls.Add(this.sim4Lifetime);
-            this.groupBox2.Controls.Add(this.sim4LifetimeStatic);
-            this.groupBox2.Controls.Add(this.sim4TypeStatic);
-            this.groupBox2.Controls.Add(this.sim4Trait5);
-            this.groupBox2.Controls.Add(this.sim4Trait4);
-            this.groupBox2.Controls.Add(this.sim4Age);
-            this.groupBox2.Controls.Add(this.sim4Trait3);
-            this.groupBox2.Controls.Add(this.sim4AgeStatic);
-            this.groupBox2.Controls.Add(this.sim4Trait2);
-            this.groupBox2.Controls.Add(this.sim4Trait1);
-            this.groupBox2.Controls.Add(this.sim4Career);
-            this.groupBox2.Controls.Add(this.sim4Gender);
-            this.groupBox2.Controls.Add(this.sim4Trait5Static);
-            this.groupBox2.Controls.Add(this.sim4GenderStatic);
-            this.groupBox2.Controls.Add(this.sim4Trait4Static);
-            this.groupBox2.Controls.Add(this.sim4CareerStatic);
-            this.groupBox2.Controls.Add(this.sim4Trait3Static);
-            this.groupBox2.Controls.Add(this.sim4Trait1Static);
-            this.groupBox2.Controls.Add(this.sim4Trait2Static);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(828, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox2.Size = new System.Drawing.Size(266, 166);
-            this.groupBox2.TabIndex = 23;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Sim 4";
+            this.sim4Static.Controls.Add(this.sim4Type);
+            this.sim4Static.Controls.Add(this.sim4Lifetime);
+            this.sim4Static.Controls.Add(this.sim4LifetimeStatic);
+            this.sim4Static.Controls.Add(this.sim4TypeStatic);
+            this.sim4Static.Controls.Add(this.sim4Trait5);
+            this.sim4Static.Controls.Add(this.sim4Trait4);
+            this.sim4Static.Controls.Add(this.sim4Age);
+            this.sim4Static.Controls.Add(this.sim4Trait3);
+            this.sim4Static.Controls.Add(this.sim4AgeStatic);
+            this.sim4Static.Controls.Add(this.sim4Trait2);
+            this.sim4Static.Controls.Add(this.sim4Trait1);
+            this.sim4Static.Controls.Add(this.sim4Career);
+            this.sim4Static.Controls.Add(this.sim4Gender);
+            this.sim4Static.Controls.Add(this.sim4Trait5Static);
+            this.sim4Static.Controls.Add(this.sim4GenderStatic);
+            this.sim4Static.Controls.Add(this.sim4Trait4Static);
+            this.sim4Static.Controls.Add(this.sim4CareerStatic);
+            this.sim4Static.Controls.Add(this.sim4Trait3Static);
+            this.sim4Static.Controls.Add(this.sim4Trait1Static);
+            this.sim4Static.Controls.Add(this.sim4Trait2Static);
+            this.sim4Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim4Static.Location = new System.Drawing.Point(828, 12);
+            this.sim4Static.Name = "sim4Static";
+            this.sim4Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim4Static.Size = new System.Drawing.Size(266, 166);
+            this.sim4Static.TabIndex = 23;
+            this.sim4Static.TabStop = false;
+            this.sim4Static.Text = "Sim 4";
             // 
             // sim4Type
             // 
@@ -2231,7 +2231,7 @@
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.sim4Static);
             this.Controls.Add(this.sim3Static);
             this.Controls.Add(this.sim2Static);
             this.Controls.Add(this.lifespan);
@@ -2251,8 +2251,8 @@
             this.sim2Static.PerformLayout();
             this.sim3Static.ResumeLayout(false);
             this.sim3Static.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.sim4Static.ResumeLayout(false);
+            this.sim4Static.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -2334,7 +2334,7 @@
         private System.Windows.Forms.Label sim3Trait3Static;
         private System.Windows.Forms.Label sim3Trait1Static;
         private System.Windows.Forms.Label sim3Trait2Static;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox sim4Static;
         private System.Windows.Forms.Label sim4Type;
         private System.Windows.Forms.Label sim4Lifetime;
         private System.Windows.Forms.Label sim4LifetimeStatic;

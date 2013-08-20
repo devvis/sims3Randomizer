@@ -118,8 +118,8 @@
             this.sim4Trait2Static = new System.Windows.Forms.Label();
             this.sim5Static = new System.Windows.Forms.GroupBox();
             this.sim5Type = new System.Windows.Forms.Label();
-            this.sim5Wish = new System.Windows.Forms.Label();
-            this.sim5WishStatic = new System.Windows.Forms.Label();
+            this.sim5Lifetime = new System.Windows.Forms.Label();
+            this.sim5LifetimeStatic = new System.Windows.Forms.Label();
             this.sim5TypeStatic = new System.Windows.Forms.Label();
             this.sim5Trait5 = new System.Windows.Forms.Label();
             this.sim5Trait4 = new System.Windows.Forms.Label();
@@ -139,8 +139,8 @@
             this.sim5Trait2Static = new System.Windows.Forms.Label();
             this.sim6Static = new System.Windows.Forms.GroupBox();
             this.sim6Type = new System.Windows.Forms.Label();
-            this.sim6Wish = new System.Windows.Forms.Label();
-            this.sim6WishStatic = new System.Windows.Forms.Label();
+            this.sim6Lifetime = new System.Windows.Forms.Label();
+            this.sim6LifetimeStatic = new System.Windows.Forms.Label();
             this.sim6TypeStatic = new System.Windows.Forms.Label();
             this.sim6Trait5 = new System.Windows.Forms.Label();
             this.sim6Trait4 = new System.Windows.Forms.Label();
@@ -160,8 +160,8 @@
             this.sim6Trait2Static = new System.Windows.Forms.Label();
             this.sim7Static = new System.Windows.Forms.GroupBox();
             this.sim7Type = new System.Windows.Forms.Label();
-            this.sim7Wish = new System.Windows.Forms.Label();
-            this.sim7WishStatic = new System.Windows.Forms.Label();
+            this.sim7Lifetime = new System.Windows.Forms.Label();
+            this.sim7LifetimeStatic = new System.Windows.Forms.Label();
             this.sim7TypeStatic = new System.Windows.Forms.Label();
             this.sim7Trait5 = new System.Windows.Forms.Label();
             this.sim7Trait4 = new System.Windows.Forms.Label();
@@ -181,8 +181,8 @@
             this.sim7Trait2Static = new System.Windows.Forms.Label();
             this.sim8Static = new System.Windows.Forms.GroupBox();
             this.sim8Type = new System.Windows.Forms.Label();
-            this.sim8Wish = new System.Windows.Forms.Label();
-            this.sim8WishStatic = new System.Windows.Forms.Label();
+            this.sim8Lifetime = new System.Windows.Forms.Label();
+            this.sim8LifetimeStatic = new System.Windows.Forms.Label();
             this.sim8TypeStatic = new System.Windows.Forms.Label();
             this.sim8Trait5 = new System.Windows.Forms.Label();
             this.sim8Trait4 = new System.Windows.Forms.Label();
@@ -1229,8 +1229,8 @@
             // sim5Static
             // 
             this.sim5Static.Controls.Add(this.sim5Type);
-            this.sim5Static.Controls.Add(this.sim5Wish);
-            this.sim5Static.Controls.Add(this.sim5WishStatic);
+            this.sim5Static.Controls.Add(this.sim5Lifetime);
+            this.sim5Static.Controls.Add(this.sim5LifetimeStatic);
             this.sim5Static.Controls.Add(this.sim5TypeStatic);
             this.sim5Static.Controls.Add(this.sim5Trait5);
             this.sim5Static.Controls.Add(this.sim5Trait4);
@@ -1267,27 +1267,27 @@
             this.sim5Type.TabIndex = 21;
             this.sim5Type.Text = "yolo";
             // 
-            // sim5Wish
+            // sim5Lifetime
             // 
-            this.sim5Wish.AutoSize = true;
-            this.sim5Wish.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim5Wish.Location = new System.Drawing.Point(51, 60);
-            this.sim5Wish.Name = "sim5Wish";
-            this.sim5Wish.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sim5Wish.Size = new System.Drawing.Size(26, 13);
-            this.sim5Wish.TabIndex = 15;
-            this.sim5Wish.Text = "yolo";
+            this.sim5Lifetime.AutoSize = true;
+            this.sim5Lifetime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim5Lifetime.Location = new System.Drawing.Point(51, 60);
+            this.sim5Lifetime.Name = "sim5Lifetime";
+            this.sim5Lifetime.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim5Lifetime.Size = new System.Drawing.Size(26, 13);
+            this.sim5Lifetime.TabIndex = 15;
+            this.sim5Lifetime.Text = "yolo";
             // 
-            // sim5WishStatic
+            // sim5LifetimeStatic
             // 
-            this.sim5WishStatic.AutoSize = true;
-            this.sim5WishStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim5WishStatic.Location = new System.Drawing.Point(6, 60);
-            this.sim5WishStatic.Name = "sim5WishStatic";
-            this.sim5WishStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sim5WishStatic.Size = new System.Drawing.Size(34, 13);
-            this.sim5WishStatic.TabIndex = 20;
-            this.sim5WishStatic.Text = "Wish:";
+            this.sim5LifetimeStatic.AutoSize = true;
+            this.sim5LifetimeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim5LifetimeStatic.Location = new System.Drawing.Point(6, 60);
+            this.sim5LifetimeStatic.Name = "sim5LifetimeStatic";
+            this.sim5LifetimeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim5LifetimeStatic.Size = new System.Drawing.Size(34, 13);
+            this.sim5LifetimeStatic.TabIndex = 20;
+            this.sim5LifetimeStatic.Text = "Wish:";
             // 
             // sim5TypeStatic
             // 
@@ -1478,8 +1478,8 @@
             // sim6Static
             // 
             this.sim6Static.Controls.Add(this.sim6Type);
-            this.sim6Static.Controls.Add(this.sim6Wish);
-            this.sim6Static.Controls.Add(this.sim6WishStatic);
+            this.sim6Static.Controls.Add(this.sim6Lifetime);
+            this.sim6Static.Controls.Add(this.sim6LifetimeStatic);
             this.sim6Static.Controls.Add(this.sim6TypeStatic);
             this.sim6Static.Controls.Add(this.sim6Trait5);
             this.sim6Static.Controls.Add(this.sim6Trait4);
@@ -1516,27 +1516,27 @@
             this.sim6Type.TabIndex = 21;
             this.sim6Type.Text = "yolo";
             // 
-            // sim6Wish
+            // sim6Lifetime
             // 
-            this.sim6Wish.AutoSize = true;
-            this.sim6Wish.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim6Wish.Location = new System.Drawing.Point(51, 60);
-            this.sim6Wish.Name = "sim6Wish";
-            this.sim6Wish.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sim6Wish.Size = new System.Drawing.Size(26, 13);
-            this.sim6Wish.TabIndex = 15;
-            this.sim6Wish.Text = "yolo";
+            this.sim6Lifetime.AutoSize = true;
+            this.sim6Lifetime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim6Lifetime.Location = new System.Drawing.Point(51, 60);
+            this.sim6Lifetime.Name = "sim6Lifetime";
+            this.sim6Lifetime.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim6Lifetime.Size = new System.Drawing.Size(26, 13);
+            this.sim6Lifetime.TabIndex = 15;
+            this.sim6Lifetime.Text = "yolo";
             // 
-            // sim6WishStatic
+            // sim6LifetimeStatic
             // 
-            this.sim6WishStatic.AutoSize = true;
-            this.sim6WishStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim6WishStatic.Location = new System.Drawing.Point(6, 60);
-            this.sim6WishStatic.Name = "sim6WishStatic";
-            this.sim6WishStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sim6WishStatic.Size = new System.Drawing.Size(34, 13);
-            this.sim6WishStatic.TabIndex = 20;
-            this.sim6WishStatic.Text = "Wish:";
+            this.sim6LifetimeStatic.AutoSize = true;
+            this.sim6LifetimeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim6LifetimeStatic.Location = new System.Drawing.Point(6, 60);
+            this.sim6LifetimeStatic.Name = "sim6LifetimeStatic";
+            this.sim6LifetimeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim6LifetimeStatic.Size = new System.Drawing.Size(34, 13);
+            this.sim6LifetimeStatic.TabIndex = 20;
+            this.sim6LifetimeStatic.Text = "Wish:";
             // 
             // sim6TypeStatic
             // 
@@ -1727,8 +1727,8 @@
             // sim7Static
             // 
             this.sim7Static.Controls.Add(this.sim7Type);
-            this.sim7Static.Controls.Add(this.sim7Wish);
-            this.sim7Static.Controls.Add(this.sim7WishStatic);
+            this.sim7Static.Controls.Add(this.sim7Lifetime);
+            this.sim7Static.Controls.Add(this.sim7LifetimeStatic);
             this.sim7Static.Controls.Add(this.sim7TypeStatic);
             this.sim7Static.Controls.Add(this.sim7Trait5);
             this.sim7Static.Controls.Add(this.sim7Trait4);
@@ -1765,27 +1765,27 @@
             this.sim7Type.TabIndex = 21;
             this.sim7Type.Text = "yolo";
             // 
-            // sim7Wish
+            // sim7Lifetime
             // 
-            this.sim7Wish.AutoSize = true;
-            this.sim7Wish.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim7Wish.Location = new System.Drawing.Point(51, 60);
-            this.sim7Wish.Name = "sim7Wish";
-            this.sim7Wish.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sim7Wish.Size = new System.Drawing.Size(26, 13);
-            this.sim7Wish.TabIndex = 15;
-            this.sim7Wish.Text = "yolo";
+            this.sim7Lifetime.AutoSize = true;
+            this.sim7Lifetime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim7Lifetime.Location = new System.Drawing.Point(51, 60);
+            this.sim7Lifetime.Name = "sim7Lifetime";
+            this.sim7Lifetime.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim7Lifetime.Size = new System.Drawing.Size(26, 13);
+            this.sim7Lifetime.TabIndex = 15;
+            this.sim7Lifetime.Text = "yolo";
             // 
-            // sim7WishStatic
+            // sim7LifetimeStatic
             // 
-            this.sim7WishStatic.AutoSize = true;
-            this.sim7WishStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim7WishStatic.Location = new System.Drawing.Point(6, 60);
-            this.sim7WishStatic.Name = "sim7WishStatic";
-            this.sim7WishStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sim7WishStatic.Size = new System.Drawing.Size(34, 13);
-            this.sim7WishStatic.TabIndex = 20;
-            this.sim7WishStatic.Text = "Wish:";
+            this.sim7LifetimeStatic.AutoSize = true;
+            this.sim7LifetimeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim7LifetimeStatic.Location = new System.Drawing.Point(6, 60);
+            this.sim7LifetimeStatic.Name = "sim7LifetimeStatic";
+            this.sim7LifetimeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim7LifetimeStatic.Size = new System.Drawing.Size(34, 13);
+            this.sim7LifetimeStatic.TabIndex = 20;
+            this.sim7LifetimeStatic.Text = "Wish:";
             // 
             // sim7TypeStatic
             // 
@@ -1976,8 +1976,8 @@
             // sim8Static
             // 
             this.sim8Static.Controls.Add(this.sim8Type);
-            this.sim8Static.Controls.Add(this.sim8Wish);
-            this.sim8Static.Controls.Add(this.sim8WishStatic);
+            this.sim8Static.Controls.Add(this.sim8Lifetime);
+            this.sim8Static.Controls.Add(this.sim8LifetimeStatic);
             this.sim8Static.Controls.Add(this.sim8TypeStatic);
             this.sim8Static.Controls.Add(this.sim8Trait5);
             this.sim8Static.Controls.Add(this.sim8Trait4);
@@ -2014,27 +2014,27 @@
             this.sim8Type.TabIndex = 21;
             this.sim8Type.Text = "yolo";
             // 
-            // sim8Wish
+            // sim8Lifetime
             // 
-            this.sim8Wish.AutoSize = true;
-            this.sim8Wish.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim8Wish.Location = new System.Drawing.Point(51, 60);
-            this.sim8Wish.Name = "sim8Wish";
-            this.sim8Wish.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sim8Wish.Size = new System.Drawing.Size(26, 13);
-            this.sim8Wish.TabIndex = 15;
-            this.sim8Wish.Text = "yolo";
+            this.sim8Lifetime.AutoSize = true;
+            this.sim8Lifetime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim8Lifetime.Location = new System.Drawing.Point(51, 60);
+            this.sim8Lifetime.Name = "sim8Lifetime";
+            this.sim8Lifetime.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim8Lifetime.Size = new System.Drawing.Size(26, 13);
+            this.sim8Lifetime.TabIndex = 15;
+            this.sim8Lifetime.Text = "yolo";
             // 
-            // sim8WishStatic
+            // sim8LifetimeStatic
             // 
-            this.sim8WishStatic.AutoSize = true;
-            this.sim8WishStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sim8WishStatic.Location = new System.Drawing.Point(6, 60);
-            this.sim8WishStatic.Name = "sim8WishStatic";
-            this.sim8WishStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sim8WishStatic.Size = new System.Drawing.Size(34, 13);
-            this.sim8WishStatic.TabIndex = 20;
-            this.sim8WishStatic.Text = "Wish:";
+            this.sim8LifetimeStatic.AutoSize = true;
+            this.sim8LifetimeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim8LifetimeStatic.Location = new System.Drawing.Point(6, 60);
+            this.sim8LifetimeStatic.Name = "sim8LifetimeStatic";
+            this.sim8LifetimeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim8LifetimeStatic.Size = new System.Drawing.Size(34, 13);
+            this.sim8LifetimeStatic.TabIndex = 20;
+            this.sim8LifetimeStatic.Text = "Wish:";
             // 
             // sim8TypeStatic
             // 
@@ -2357,8 +2357,8 @@
         private System.Windows.Forms.Label sim4Trait2Static;
         private System.Windows.Forms.GroupBox sim5Static;
         private System.Windows.Forms.Label sim5Type;
-        private System.Windows.Forms.Label sim5Wish;
-        private System.Windows.Forms.Label sim5WishStatic;
+        private System.Windows.Forms.Label sim5Lifetime;
+        private System.Windows.Forms.Label sim5LifetimeStatic;
         private System.Windows.Forms.Label sim5TypeStatic;
         private System.Windows.Forms.Label sim5Trait5;
         private System.Windows.Forms.Label sim5Trait4;
@@ -2378,8 +2378,8 @@
         private System.Windows.Forms.Label sim5Trait2Static;
         private System.Windows.Forms.GroupBox sim6Static;
         private System.Windows.Forms.Label sim6Type;
-        private System.Windows.Forms.Label sim6Wish;
-        private System.Windows.Forms.Label sim6WishStatic;
+        private System.Windows.Forms.Label sim6Lifetime;
+        private System.Windows.Forms.Label sim6LifetimeStatic;
         private System.Windows.Forms.Label sim6TypeStatic;
         private System.Windows.Forms.Label sim6Trait5;
         private System.Windows.Forms.Label sim6Trait4;
@@ -2399,8 +2399,8 @@
         private System.Windows.Forms.Label sim6Trait2Static;
         private System.Windows.Forms.GroupBox sim7Static;
         private System.Windows.Forms.Label sim7Type;
-        private System.Windows.Forms.Label sim7Wish;
-        private System.Windows.Forms.Label sim7WishStatic;
+        private System.Windows.Forms.Label sim7Lifetime;
+        private System.Windows.Forms.Label sim7LifetimeStatic;
         private System.Windows.Forms.Label sim7TypeStatic;
         private System.Windows.Forms.Label sim7Trait5;
         private System.Windows.Forms.Label sim7Trait4;
@@ -2420,8 +2420,8 @@
         private System.Windows.Forms.Label sim7Trait2Static;
         private System.Windows.Forms.GroupBox sim8Static;
         private System.Windows.Forms.Label sim8Type;
-        private System.Windows.Forms.Label sim8Wish;
-        private System.Windows.Forms.Label sim8WishStatic;
+        private System.Windows.Forms.Label sim8Lifetime;
+        private System.Windows.Forms.Label sim8LifetimeStatic;
         private System.Windows.Forms.Label sim8TypeStatic;
         private System.Windows.Forms.Label sim8Trait5;
         private System.Windows.Forms.Label sim8Trait4;

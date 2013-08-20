@@ -754,6 +754,8 @@ namespace theSims3Randomizer
             this.sim6Type.Text = "None";
             this.sim7Type.Text = "None";
             this.sim8Type.Text = "None";
+
+            this.lifespan.Text = "None";
         }
 
     }

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theSims3Randomizer", "theSims3Randomizer\theSims3Randomizer.csproj", "{1D998A3D-F05E-4F40-A520-5B1D6AF2CF67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sims3RandomizerGenerator", "sims3RandomizerGenerator\sims3RandomizerGenerator.csproj", "{08732A77-DF9A-4E05-A19C-35EB839FCD72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{1D998A3D-F05E-4F40-A520-5B1D6AF2CF67}.Debug|x86.Build.0 = Debug|x86
 		{1D998A3D-F05E-4F40-A520-5B1D6AF2CF67}.Release|x86.ActiveCfg = Release|x86
 		{1D998A3D-F05E-4F40-A520-5B1D6AF2CF67}.Release|x86.Build.0 = Release|x86
+		{08732A77-DF9A-4E05-A19C-35EB839FCD72}.Debug|x86.ActiveCfg = Debug|x86
+		{08732A77-DF9A-4E05-A19C-35EB839FCD72}.Debug|x86.Build.0 = Debug|x86
+		{08732A77-DF9A-4E05-A19C-35EB839FCD72}.Release|x86.ActiveCfg = Release|x86
+		{08732A77-DF9A-4E05-A19C-35EB839FCD72}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

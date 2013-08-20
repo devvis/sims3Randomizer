@@ -222,6 +222,7 @@
             this.simAge.Name = "simAge";
             this.simAge.Size = new System.Drawing.Size(283, 21);
             this.simAge.TabIndex = 16;
+            this.simAge.SelectedIndexChanged += new System.EventHandler(this.simAge_SelectedIndexChanged);
             // 
             // simLifetime
             // 

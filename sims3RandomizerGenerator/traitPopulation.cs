@@ -90,5 +90,53 @@ namespace sims3RandomizerGenerator
             }
 
         }
+
+        private void populateToddlerTraits()
+        {
+            List<string> traits = new List<string>();
+            traits.Add("Abscent-Minded");
+            traits.Add("Artistic");
+            traits.Add("Athletic");
+            traits.Add("Brave");
+            traits.Add("Clumsy");
+            traits.Add("Couch Potato");
+            traits.Add("Disciplined");
+            traits.Add("Easily Impressed");
+            traits.Add("Eccentric");
+            traits.Add("Evil");
+            traits.Add("Excitable");
+            traits.Add("Friendly");
+            traits.Add("Genius");
+            traits.Add("Good");
+            traits.Add("Grumpy");
+            traits.Add("Hates the Outdoors");
+            traits.Add("Heavy Sleeper");
+            traits.Add("Insane");
+            traits.Add("Light Sleeper");
+            traits.Add("Loner");
+            traits.Add("Loves the Outdoors");
+            traits.Add("Neurotic");
+            traits.Add("Perceptive");
+            traits.Add("Slob");
+            traits.Add("Virtuoso");
+
+            this.simTrait1.Items.Clear();
+            this.simTrait2.Items.Clear();
+            this.simTrait3.Items.Clear();
+            this.simTrait4.Items.Clear();
+            this.simTrait5.Items.Clear();
+            this.simTrait3.Items.Add("None");
+            this.simTrait4.Items.Add("None");
+            this.simTrait5.Items.Add("None");
+
+
+
+            foreach (string trait in traits)
+            {
+                this.simTrait1.Items.Add(trait);
+                this.simTrait2.Items.Add(trait);
+            }
+
+        }
     }
 }

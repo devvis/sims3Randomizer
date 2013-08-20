@@ -52,6 +52,7 @@
             this.simTrait3 = new System.Windows.Forms.ComboBox();
             this.simTrait4 = new System.Windows.Forms.ComboBox();
             this.simTrait5 = new System.Windows.Forms.ComboBox();
+            this.simSaveChallengeFile = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // simNumLabel
@@ -71,6 +72,7 @@
             this.simSaveButton.TabIndex = 2;
             this.simSaveButton.Text = "Save Challenge";
             this.simSaveButton.UseVisualStyleBackColor = true;
+            this.simSaveButton.Click += new System.EventHandler(this.simSaveButton_Click);
             // 
             // simGenderStatic
             // 
@@ -179,6 +181,7 @@
             this.simSelectionList.Name = "simSelectionList";
             this.simSelectionList.Size = new System.Drawing.Size(121, 21);
             this.simSelectionList.TabIndex = 13;
+            this.simSelectionList.SelectedIndexChanged += new System.EventHandler(this.simSelectionList_SelectedIndexChanged);
             // 
             // simGender
             // 
@@ -305,6 +308,13 @@
             this.simTrait5.Size = new System.Drawing.Size(283, 21);
             this.simTrait5.TabIndex = 23;
             // 
+            // simSaveChallengeFile
+            // 
+            this.simSaveChallengeFile.DefaultExt = "xml";
+            this.simSaveChallengeFile.FileName = "challenge.xml";
+            this.simSaveChallengeFile.Title = "Save your challenge";
+            this.simSaveChallengeFile.FileOk += new System.ComponentModel.CancelEventHandler(this.simSaveChallengeFile_FileOk);
+            // 
             // mainWnd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,6 +380,7 @@
         private System.Windows.Forms.ComboBox simTrait3;
         private System.Windows.Forms.ComboBox simTrait4;
         private System.Windows.Forms.ComboBox simTrait5;
+        private System.Windows.Forms.SaveFileDialog simSaveChallengeFile;
     }
 }
 

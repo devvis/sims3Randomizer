@@ -566,19 +566,18 @@ namespace theSims3Randomizer
             // 2: werewolf
             // 3: witch
             // 4: vampire
-            // 5: zombie
-            // 6: dog
-            // 7: cat
-            // 8: horse
+            // 5: dog
+            // 6: cat
+            // 7: horse
             int r;
             if (first == true)
             {
                 // we want to make sure that our first sim is always some kind of "human-like"
-                r = rnd.Next(0, 6);
+                r = rnd.Next(0, 5);
             }
             else
             {
-                r = rnd.Next(0, 9);
+                r = rnd.Next(0, 8);
             }
             switch (r)
             {
@@ -593,12 +592,10 @@ namespace theSims3Randomizer
                 case 4:
                     return "Vampire";
                 case 5:
-                    return "Zombie";
-                case 6:
                     return "Dog";
-                case 7:
+                case 6:
                     return "Cat";
-                case 8:
+                case 7:
                     return "Horse";
                 default:
                     throw new IndexOutOfRangeException("How is this even possible. Fuck logic.");

@@ -53,8 +53,42 @@
             this.lifespan = new System.Windows.Forms.Label();
             this.sim1LifetimeStatic = new System.Windows.Forms.Label();
             this.sim1Type = new System.Windows.Forms.Label();
+            this.sim2Static = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.sim2LifetimeStatic = new System.Windows.Forms.Label();
+            this.sim2TypeStatic = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.sim2AgeStatic = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.sim2Trait5Static = new System.Windows.Forms.Label();
+            this.sim2GenderStatic = new System.Windows.Forms.Label();
+            this.sim2Trait4Static = new System.Windows.Forms.Label();
+            this.sim2CareerStatic = new System.Windows.Forms.Label();
+            this.sim2Trait3Static = new System.Windows.Forms.Label();
+            this.sim2Trait1Static = new System.Windows.Forms.Label();
+            this.sim2Trait2Static = new System.Windows.Forms.Label();
             this.sim1Static.SuspendLayout();
+            this.sim2Static.SuspendLayout();
             this.SuspendLayout();
+
+            this.label1.Text = "yolo";
+            this.label10.Text = "yolo";
+            this.label11.Text = "yolo";
+            this.label12.Text = "yolo";
+            this.label13.Text = "yolo";
+            this.label2.Text = "yolo";
+            this.label5.Text = "yolo";
+            this.label6.Text = "yolo";
+            this.label7.Text = "yolo";
+            this.label8.Text = "yolo";
+
             // 
             // sim1GenderStatic
             // 
@@ -325,11 +359,251 @@
             this.sim1Type.Size = new System.Drawing.Size(0, 13);
             this.sim1Type.TabIndex = 21;
             // 
+            // sim2Static
+            // 
+            this.sim2Static.Controls.Add(this.label1);
+            this.sim2Static.Controls.Add(this.label2);
+            this.sim2Static.Controls.Add(this.sim2LifetimeStatic);
+            this.sim2Static.Controls.Add(this.sim2TypeStatic);
+            this.sim2Static.Controls.Add(this.label5);
+            this.sim2Static.Controls.Add(this.label6);
+            this.sim2Static.Controls.Add(this.label7);
+            this.sim2Static.Controls.Add(this.label8);
+            this.sim2Static.Controls.Add(this.sim2AgeStatic);
+            this.sim2Static.Controls.Add(this.label10);
+            this.sim2Static.Controls.Add(this.label11);
+            this.sim2Static.Controls.Add(this.label12);
+            this.sim2Static.Controls.Add(this.label13);
+            this.sim2Static.Controls.Add(this.sim2Trait5Static);
+            this.sim2Static.Controls.Add(this.sim2GenderStatic);
+            this.sim2Static.Controls.Add(this.sim2Trait4Static);
+            this.sim2Static.Controls.Add(this.sim2CareerStatic);
+            this.sim2Static.Controls.Add(this.sim2Trait3Static);
+            this.sim2Static.Controls.Add(this.sim2Trait1Static);
+            this.sim2Static.Controls.Add(this.sim2Trait2Static);
+            this.sim2Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2Static.Location = new System.Drawing.Point(284, 12);
+            this.sim2Static.Name = "sim2Static";
+            this.sim2Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2Static.Size = new System.Drawing.Size(266, 166);
+            this.sim2Static.TabIndex = 22;
+            this.sim2Static.TabStop = false;
+            this.sim2Static.Text = "Sim 2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(51, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 21;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(51, 60);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 15;
+            // 
+            // sim2LifetimeStatic
+            // 
+            this.sim2LifetimeStatic.AutoSize = true;
+            this.sim2LifetimeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2LifetimeStatic.Location = new System.Drawing.Point(6, 60);
+            this.sim2LifetimeStatic.Name = "sim2LifetimeStatic";
+            this.sim2LifetimeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2LifetimeStatic.Size = new System.Drawing.Size(34, 13);
+            this.sim2LifetimeStatic.TabIndex = 20;
+            this.sim2LifetimeStatic.Text = "Wish:";
+            // 
+            // sim2TypeStatic
+            // 
+            this.sim2TypeStatic.AutoSize = true;
+            this.sim2TypeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2TypeStatic.Location = new System.Drawing.Point(6, 73);
+            this.sim2TypeStatic.Name = "sim2TypeStatic";
+            this.sim2TypeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2TypeStatic.Size = new System.Drawing.Size(34, 13);
+            this.sim2TypeStatic.TabIndex = 9;
+            this.sim2TypeStatic.Text = "Type:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(51, 145);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(0, 13);
+            this.label5.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(51, 132);
+            this.label6.Name = "label6";
+            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(51, 42);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 13);
+            this.label7.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(51, 119);
+            this.label8.Name = "label8";
+            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label8.Size = new System.Drawing.Size(0, 13);
+            this.label8.TabIndex = 12;
+            // 
+            // sim2AgeStatic
+            // 
+            this.sim2AgeStatic.AutoSize = true;
+            this.sim2AgeStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2AgeStatic.Location = new System.Drawing.Point(6, 42);
+            this.sim2AgeStatic.Name = "sim2AgeStatic";
+            this.sim2AgeStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2AgeStatic.Size = new System.Drawing.Size(29, 13);
+            this.sim2AgeStatic.TabIndex = 16;
+            this.sim2AgeStatic.Text = "Age:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(51, 106);
+            this.label10.Name = "label10";
+            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.TabIndex = 11;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(51, 93);
+            this.label11.Name = "label11";
+            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label11.Size = new System.Drawing.Size(0, 13);
+            this.label11.TabIndex = 10;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(51, 29);
+            this.label12.Name = "label12";
+            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label12.Size = new System.Drawing.Size(0, 13);
+            this.label12.TabIndex = 9;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(51, 16);
+            this.label13.Name = "label13";
+            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label13.Size = new System.Drawing.Size(0, 13);
+            this.label13.TabIndex = 8;
+            // 
+            // sim2Trait5Static
+            // 
+            this.sim2Trait5Static.AutoSize = true;
+            this.sim2Trait5Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2Trait5Static.Location = new System.Drawing.Point(6, 145);
+            this.sim2Trait5Static.Name = "sim2Trait5Static";
+            this.sim2Trait5Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2Trait5Static.Size = new System.Drawing.Size(40, 13);
+            this.sim2Trait5Static.TabIndex = 7;
+            this.sim2Trait5Static.Text = "Trait 5:";
+            // 
+            // sim2GenderStatic
+            // 
+            this.sim2GenderStatic.AutoSize = true;
+            this.sim2GenderStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2GenderStatic.Location = new System.Drawing.Point(6, 16);
+            this.sim2GenderStatic.Name = "sim2GenderStatic";
+            this.sim2GenderStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2GenderStatic.Size = new System.Drawing.Size(45, 13);
+            this.sim2GenderStatic.TabIndex = 1;
+            this.sim2GenderStatic.Text = "Gender:";
+            // 
+            // sim2Trait4Static
+            // 
+            this.sim2Trait4Static.AutoSize = true;
+            this.sim2Trait4Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2Trait4Static.Location = new System.Drawing.Point(6, 132);
+            this.sim2Trait4Static.Name = "sim2Trait4Static";
+            this.sim2Trait4Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2Trait4Static.Size = new System.Drawing.Size(40, 13);
+            this.sim2Trait4Static.TabIndex = 6;
+            this.sim2Trait4Static.Text = "Trait 4:";
+            // 
+            // sim2CareerStatic
+            // 
+            this.sim2CareerStatic.AutoSize = true;
+            this.sim2CareerStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2CareerStatic.Location = new System.Drawing.Point(6, 29);
+            this.sim2CareerStatic.Name = "sim2CareerStatic";
+            this.sim2CareerStatic.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2CareerStatic.Size = new System.Drawing.Size(41, 13);
+            this.sim2CareerStatic.TabIndex = 2;
+            this.sim2CareerStatic.Text = "Career:";
+            // 
+            // sim2Trait3Static
+            // 
+            this.sim2Trait3Static.AutoSize = true;
+            this.sim2Trait3Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2Trait3Static.Location = new System.Drawing.Point(6, 119);
+            this.sim2Trait3Static.Name = "sim2Trait3Static";
+            this.sim2Trait3Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2Trait3Static.Size = new System.Drawing.Size(40, 13);
+            this.sim2Trait3Static.TabIndex = 5;
+            this.sim2Trait3Static.Text = "Trait 3:";
+            // 
+            // sim2Trait1Static
+            // 
+            this.sim2Trait1Static.AutoSize = true;
+            this.sim2Trait1Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2Trait1Static.Location = new System.Drawing.Point(6, 93);
+            this.sim2Trait1Static.Name = "sim2Trait1Static";
+            this.sim2Trait1Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2Trait1Static.Size = new System.Drawing.Size(40, 13);
+            this.sim2Trait1Static.TabIndex = 3;
+            this.sim2Trait1Static.Text = "Trait 1:";
+            // 
+            // sim2Trait2Static
+            // 
+            this.sim2Trait2Static.AutoSize = true;
+            this.sim2Trait2Static.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim2Trait2Static.Location = new System.Drawing.Point(6, 106);
+            this.sim2Trait2Static.Name = "sim2Trait2Static";
+            this.sim2Trait2Static.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sim2Trait2Static.Size = new System.Drawing.Size(40, 13);
+            this.sim2Trait2Static.TabIndex = 4;
+            this.sim2Trait2Static.Text = "Trait 2:";
+            // 
             // mainWnd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 422);
+            this.ClientSize = new System.Drawing.Size(1106, 422);
+            this.Controls.Add(this.sim2Static);
             this.Controls.Add(this.lifespan);
             this.Controls.Add(this.lifespanStatic);
             this.Controls.Add(this.btnGenerate);
@@ -343,6 +617,8 @@
             this.Text = "The Sims 3 Randomizer";
             this.sim1Static.ResumeLayout(false);
             this.sim1Static.PerformLayout();
+            this.sim2Static.ResumeLayout(false);
+            this.sim2Static.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,6 +650,27 @@
         private System.Windows.Forms.Label lifespan;
         private System.Windows.Forms.Label sim1LifetimeStatic;
         private System.Windows.Forms.Label sim1Type;
+        private System.Windows.Forms.GroupBox sim2Static;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label sim2LifetimeStatic;
+        private System.Windows.Forms.Label sim2TypeStatic;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label sim2AgeStatic;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label sim2Trait5Static;
+        private System.Windows.Forms.Label sim2GenderStatic;
+        private System.Windows.Forms.Label sim2Trait4Static;
+        private System.Windows.Forms.Label sim2CareerStatic;
+        private System.Windows.Forms.Label sim2Trait3Static;
+        private System.Windows.Forms.Label sim2Trait1Static;
+        private System.Windows.Forms.Label sim2Trait2Static;
     }
 }
 

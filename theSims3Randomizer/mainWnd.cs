@@ -439,7 +439,23 @@ namespace theSims3Randomizer
             return returnTraits;
         }
 
-
+        private string getLifespan()
+        {
+            int span = rnd.Next(1, 4);
+            switch (span)
+            {
+                case 1:
+                    return "Short";
+                case 2:
+                    return "Medium";
+                case 3:
+                    return "Normal";
+                case 4:
+                    return "Long";
+                default:
+                    throw new IndexOutOfRangeException("How is this even possible. Fuck logic.");
+            }
+        }
 
     }
 }

@@ -52,8 +52,102 @@ namespace theSims3Randomizer
                 default:
                     throw new System.ArgumentException("Index is out of range, please die!");
             }
-
         }
+
+
+        private string returnLifetimeWish()
+        {
+            List<string> lifetimeWishes = new List<string>();
+            lifetimeWishes.Add("Alchemy Artisan");
+            lifetimeWishes.Add("Become a Creature-Robot Cross Breeder");
+            lifetimeWishes.Add("Become a Master Thief");
+            lifetimeWishes.Add("Become an Astronaut");
+            lifetimeWishes.Add("Become a Superstar Athlete");
+            lifetimeWishes.Add("Blog Artist");
+            lifetimeWishes.Add("Bottomless Nectar Cellar");
+            lifetimeWishes.Add("Celebrated Five-Star Chef");
+            lifetimeWishes.Add("Celebrity Psychic");
+            lifetimeWishes.Add("CEO of a Mega-Corporation");
+            lifetimeWishes.Add("Chess Legend");
+            lifetimeWishes.Add("Deep Sea Diver");
+            lifetimeWishes.Add("Descendant of Da Vinci");
+            lifetimeWishes.Add("Distinguished Director");
+            lifetimeWishes.Add("Emperor of Evil");
+            lifetimeWishes.Add("Fashion Phenomenon");
+            lifetimeWishes.Add("Firefighter Super Hero");
+            lifetimeWishes.Add("Forensics Specialist - Dynamic DNA Profiler");
+            lifetimeWishes.Add("Gold Digger");
+            lifetimeWishes.Add("Golden Tongue/Golden Fingers");
+            lifetimeWishes.Add("Grand Explorer");
+            lifetimeWishes.Add("Great Explorer");
+            lifetimeWishes.Add("Greener Gardens");
+            lifetimeWishes.Add("Heartbreaker");
+            lifetimeWishes.Add("Hit Movie Composer");
+            lifetimeWishes.Add("Home Design Hotshot");
+            lifetimeWishes.Add("Illustrious Author");
+            lifetimeWishes.Add("International Super Spy");
+            lifetimeWishes.Add("Jack of All Trades");
+            lifetimeWishes.Add("Leader of the Free World");
+            lifetimeWishes.Add("Leader of the Pack");
+            lifetimeWishes.Add("Lifestyle of the Rich and Famous");
+            lifetimeWishes.Add("Living in the Lap of Luxury");
+            lifetimeWishes.Add("Magic Makeover");
+            lifetimeWishes.Add("Major Master");
+            lifetimeWishes.Add("Martial Arts Master");
+            lifetimeWishes.Add("Master Acrobat");
+            lifetimeWishes.Add("Master of the Arts");
+            lifetimeWishes.Add("Master of Mysticism");
+            lifetimeWishes.Add("Master Magician");
+            lifetimeWishes.Add("Master Mixologist");
+            lifetimeWishes.Add("Master Romancer");
+            lifetimeWishes.Add("Monster Maker");
+            lifetimeWishes.Add("Mystic Healer");
+            lifetimeWishes.Add("One Sim Band");
+            lifetimeWishes.Add("Paranormal Profiteer");
+            lifetimeWishes.Add("Perfect Mind, Perfect Body");
+            lifetimeWishes.Add("Perfect Student");
+            lifetimeWishes.Add("Pervasive Private Eye");
+            lifetimeWishes.Add("Physical Perfection");
+            lifetimeWishes.Add("Presenting the Perfect Private Aquarium");
+            lifetimeWishes.Add("Possession is Nine Tenths of the Law");
+            lifetimeWishes.Add("Private Museum");
+            lifetimeWishes.Add("Professional Author");
+            lifetimeWishes.Add("Reach Max Influence with all Social Groups");
+            lifetimeWishes.Add("Renaissance Sim");
+            lifetimeWishes.Add("Resort Empire");
+            lifetimeWishes.Add("Rock Star");
+            lifetimeWishes.Add("Scientific Specialist");
+            lifetimeWishes.Add("Seaside Savior");
+            lifetimeWishes.Add("Seasoned Traveler");
+            lifetimeWishes.Add("Star News Anchor");
+            lifetimeWishes.Add("Street Credible");
+            lifetimeWishes.Add("Super Popular");
+            lifetimeWishes.Add("Superstar Actor");
+            lifetimeWishes.Add("Surronded by Family");
+            lifetimeWishes.Add("Swimming in Cash");
+            lifetimeWishes.Add("The Animal Rescuer");
+            lifetimeWishes.Add("The Ark Builder");
+            lifetimeWishes.Add("The Canine Companion");
+            lifetimeWishes.Add("The Cat Herder");
+            lifetimeWishes.Add("The Culinary Librarian");
+            lifetimeWishes.Add("The Fairy Tale Finder");
+            lifetimeWishes.Add("The Jockey");
+            lifetimeWishes.Add("The Zoologist");
+            lifetimeWishes.Add("The Perfect Garden");
+            lifetimeWishes.Add("The Tinkerer");
+            lifetimeWishes.Add("Turn the Town");
+            lifetimeWishes.Add("Visionary");
+            lifetimeWishes.Add("Vocal Legend");
+            lifetimeWishes.Add("World Class Gallery");
+            lifetimeWishes.Add("World-Reknowned Surgeon");
+            lifetimeWishes.Add("Zombie Master");
+
+            int r = rnd.Next(lifetimeWishes.Count);
+
+            return lifetimeWishes[r];
+        }
+
+
 
         private string[] returnToddlerTraits()
         {

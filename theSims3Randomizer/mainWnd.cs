@@ -23,15 +23,9 @@ namespace theSims3Randomizer
             // 1: child
             // 2: teen
             // 3: adult
-            int i = 0;
-            int[] traits;
             switch (age)
             {
                 case 0:
-                    while (i < 1)
-                    {
-                        traits += returnToddlerTraits();
-                    }
                     break;
 
                 case 1:
@@ -51,6 +45,37 @@ namespace theSims3Randomizer
 
         private string returnToddlerTraits()
         {
+            List<string> traits = new List<string>();
+            traits.Add("Abscent-Minded");
+            traits.Add("Artistic");
+            traits.Add("Athletic");
+            traits.Add("Brave");
+            traits.Add("Clumsy");
+            traits.Add("Couch Potato");
+            traits.Add("Disciplined");
+            traits.Add("Easily Impressed");
+            traits.Add("Eccentric");
+            traits.Add("Evil");
+            traits.Add("Excitable");
+            traits.Add("Friendly");
+            traits.Add("Genious");
+            traits.Add("Good");
+            traits.Add("Grumpy");
+            traits.Add("Hates the Outdoors");
+            traits.Add("Heavy Sleeper");
+            traits.Add("Insane");
+            traits.Add("Light Sleeper");
+            traits.Add("Loner");
+            traits.Add("Loves the Outdoors");
+            traits.Add("Neurotic");
+            traits.Add("Perceptive");
+            traits.Add("Slob");
+            traits.Add("Virtuoso");
+
+            traits.Remove("Genious");
+
+
+
             return "yolo";
         }
 

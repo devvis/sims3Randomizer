@@ -21,10 +21,11 @@ namespace theSims3Randomizer
             foreach (string trait in ragnar)
             {
                 traits.Append(trait);
-                traits.Append(".");
+                traits.Append(" ");
             }
 
             MessageBox.Show(traits.ToString());
+            MessageBox.Show(returnLifetimeWish());
 
         }
 
@@ -53,7 +54,6 @@ namespace theSims3Randomizer
                     throw new System.ArgumentException("Index is out of range, please die!");
             }
         }
-
 
         private string returnLifetimeWish()
         {
@@ -146,8 +146,6 @@ namespace theSims3Randomizer
 
             return lifetimeWishes[r];
         }
-
-
 
         private string[] returnToddlerTraits()
         {

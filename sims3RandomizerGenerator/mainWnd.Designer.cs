@@ -86,7 +86,7 @@
             // simCareerStatic
             // 
             this.simCareerStatic.AutoSize = true;
-            this.simCareerStatic.Location = new System.Drawing.Point(12, 91);
+            this.simCareerStatic.Location = new System.Drawing.Point(12, 172);
             this.simCareerStatic.Name = "simCareerStatic";
             this.simCareerStatic.Size = new System.Drawing.Size(41, 13);
             this.simCareerStatic.TabIndex = 4;
@@ -113,7 +113,7 @@
             // simTypeStatic
             // 
             this.simTypeStatic.AutoSize = true;
-            this.simTypeStatic.Location = new System.Drawing.Point(12, 172);
+            this.simTypeStatic.Location = new System.Drawing.Point(12, 91);
             this.simTypeStatic.Name = "simTypeStatic";
             this.simTypeStatic.Size = new System.Drawing.Size(34, 13);
             this.simTypeStatic.TabIndex = 7;
@@ -202,7 +202,7 @@
             this.simJob.Items.AddRange(new object[] {
             "Steve",
             "Jobs"});
-            this.simJob.Location = new System.Drawing.Point(78, 88);
+            this.simJob.Location = new System.Drawing.Point(78, 169);
             this.simJob.Name = "simJob";
             this.simJob.Size = new System.Drawing.Size(283, 21);
             this.simJob.TabIndex = 15;
@@ -248,7 +248,7 @@
             "Human",
             "Fairy",
             "Werewolf"});
-            this.simType.Location = new System.Drawing.Point(78, 169);
+            this.simType.Location = new System.Drawing.Point(78, 88);
             this.simType.Name = "simType";
             this.simType.Size = new System.Drawing.Size(283, 21);
             this.simType.TabIndex = 18;

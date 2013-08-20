@@ -179,7 +179,6 @@ namespace theSims3Randomizer
             traits.Add("Slob");
             traits.Add("Virtuoso");
 
-            int tSize = traits.Count;
             IEnumerable<string> selectedTraits;
             string[] returnTraits;
             selectedTraits = traits.OrderBy(x => rnd.Next()).Take(2);
@@ -253,7 +252,6 @@ namespace theSims3Randomizer
             traits.Add("Virtuoso");
             traits.Add("Workaholic");
 
-            int tSize = traits.Count;
             IEnumerable<string> selectedTraits;
             string[] returnTraits;
             selectedTraits = traits.OrderBy(x => rnd.Next()).Take(3);
@@ -343,7 +341,6 @@ namespace theSims3Randomizer
             traits.Add("Virtuoso");
             traits.Add("Workaholic");
 
-            int tSize = traits.Count;
             IEnumerable<string> selectedTraits;
             string[] returnTraits;
             selectedTraits = traits.OrderBy(x => rnd.Next()).Take(4);
@@ -433,7 +430,6 @@ namespace theSims3Randomizer
             traits.Add("Virtuoso");
             traits.Add("Workaholic");
 
-            int tSize = traits.Count;
             IEnumerable<string> selectedTraits;
             string[] returnTraits;
             selectedTraits = traits.OrderBy(x => rnd.Next()).Take(5);
@@ -513,7 +509,8 @@ namespace theSims3Randomizer
                 default:
                     throw new ArgumentException("Wrong argument passed to method, I will now commit suicide.");
             }
-
         }
+
+
     }
 }

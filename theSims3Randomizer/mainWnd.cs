@@ -479,7 +479,7 @@ namespace theSims3Randomizer
             adultJob.Add("Culinary");
             adultJob.Add("Culinary");
             adultJob.Add("Education");
-            adultJob.Add("Fashion");
+            adultJob.Add("Stylist");
             adultJob.Add("Film");
             adultJob.Add("Firefighter");
             adultJob.Add("Fortune Teller");

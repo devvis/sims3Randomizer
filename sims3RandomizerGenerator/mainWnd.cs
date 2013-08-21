@@ -130,5 +130,13 @@ namespace sims3RandomizerGenerator
                     break;
             }
         }
+
+        private void simJob_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.simType.Text != "Dog" || this.simType.Text != "Cat" || this.simType.Text != "Horse")
+            {
+                populateWish();
+            }
+        }
     }
 }

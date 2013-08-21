@@ -50,15 +50,14 @@ namespace sims3RandomizerGenerator
             List<string> jobs = new List<string>();
             //Jobs and professions
             jobs.Add("Acrobat");
-            jobs.Add("Architecture");
+            jobs.Add("Architectural Design");
             jobs.Add("Art Appraiser");
             jobs.Add("Athletic");
             jobs.Add("Business");
             jobs.Add("Criminal");
             jobs.Add("Culinary");
-            jobs.Add("Culinary");
+            jobs.Add("Daycare");
             jobs.Add("Education");
-            jobs.Add("Fashion");
             jobs.Add("Film");
             jobs.Add("Firefighter");
             jobs.Add("Fortune Teller");
@@ -76,6 +75,7 @@ namespace sims3RandomizerGenerator
             jobs.Add("Science");
             jobs.Add("Singer");
             jobs.Add("Sports Agent");
+            jobs.Add("Stylist");
             //Part-time jobs
             jobs.Add("Bookstore Clerk");
             jobs.Add("Film");
@@ -179,34 +179,113 @@ namespace sims3RandomizerGenerator
 
 
             // career-wishes
-            wish.Add("Become an Astronaut");
-            wish.Add("Become a Creature-Robot Cross Breeder");
-            wish.Add("Become a Master Thief");
-            wish.Add("Become a Superstar Athlete");
-            wish.Add("Celebrated Five-Star Chef");
-            wish.Add("CEO of a Mega-Corporation");
-            wish.Add("Forensic Specialist: Dynamic DNA Profiler");
-            wish.Add("Hit Movie Composer");
-            wish.Add("International Super Spy");
-            wish.Add("Leader of the Free World");
-            wish.Add("Rock Star");
-            wish.Add("Star News Anchor");
-            wish.Add("The Emperor of Evil");
-            wish.Add("World Renowned Surgeon");
-            wish.Add("Fashion Phenomenon");
-            wish.Add("Firefighter Super Hero");
-            wish.Add("Home Design Hotshot");
-            wish.Add("Paranormal Profiteer");
-            wish.Add("Pervasive Private Eye");
-            wish.Add("Distinguished Director");
-            wish.Add("Superstar Actor");
-            wish.Add("Master Acrobat");
-            wish.Add("Master Magician");
-            wish.Add("Vocal Legend");
-            wish.Add("Celebrity Psychic");
-            wish.Add("Master of Mysticism");
-            wish.Add("Scientific Specialist");
-            wish.Add("Seaside Savior");
+            switch (this.simJob.Text)
+            {
+                case "Astronaut":
+                    wish.Add("Become an Astronaut");
+                    break;
+                case "Science":
+                    wish.Add("Become a Creature-Robot Cross Breeder");
+                    wish.Add("Scientific Specialist");
+                    break;
+                case "Criminal":
+                    wish.Add("Become a Master Thief");
+                    wish.Add("The Emperor of Evil");
+                    break;
+                case "Athletic":
+                    wish.Add("Become a Superstar Athlete");
+                    break;
+                case "Culinary":
+                    wish.Add("Celebrated Five-Star Chef");
+                    break;
+                case "Business":
+                    wish.Add("CEO of a Mega-Corporation");
+                    wish.Add("Scientific Specialist");
+                    break;
+                case "Law Enforcement":
+                    wish.Add("Forensic Specialist: Dynamic DNA Profiler");
+                    wish.Add("International Super Spy");
+                    break;
+                case "Music":
+                    wish.Add("Hit Movie Composer");
+                    wish.Add("Rock Star");
+                    break;
+                case "Political":
+                    wish.Add("Leader of the Free World");
+                    break;
+                case "Journalism":
+                    wish.Add("Star News Anchor");
+                    break;
+                case "Medical":
+                    wish.Add("World Renowned Surgeon");
+                    wish.Add("Scientific Specialist");
+                    break;
+                case "Stylist":
+                    wish.Add("Fashion Phenomenon");
+                    break;
+                case "Firefighter":
+                    wish.Add("Firefighter Super Hero");
+                    break;
+                case "Architectural Design":
+                    wish.Add("Home Design Hotshot");
+                    break;
+                case "Ghost Hunter":
+                    wish.Add("Paranormal Profiteer");
+                    break;
+                case "Investigator":
+                    wish.Add("Pervasive Private Eye");
+                    break;
+                case "Film":
+                    wish.Add("Distinguished Director");
+                    wish.Add("Superstar Actor");
+                    break;
+                case "Acrobat":
+                    wish.Add("Master Acrobat");
+                    break;
+                case "Magician":
+                    wish.Add("Master Magician");
+                    break;
+                case "Singer":
+                    wish.Add("Vocal Legend");
+                    break;
+                case "Fortune Teller":
+                    wish.Add("Celebrity Psychic");
+                    wish.Add("Master of Mysticism");
+                    break;
+                case "Lifeguard":
+                    wish.Add("Seaside Savior");
+                    break;
+                default:
+                    wish.Add("Become an Astronaut");
+                    wish.Add("Become a Creature-Robot Cross Breeder");
+                    wish.Add("Become a Master Thief");
+                    wish.Add("Become a Superstar Athlete");
+                    wish.Add("Celebrated Five-Star Chef");
+                    wish.Add("CEO of a Mega-Corporation");
+                    wish.Add("Forensic Specialist: Dynamic DNA Profiler");
+                    wish.Add("Hit Movie Composer");
+                    wish.Add("International Super Spy");
+                    wish.Add("Leader of the Free World");
+                    wish.Add("Rock Star");
+                    wish.Add("Star News Anchor");
+                    wish.Add("The Emperor of Evil");
+                    wish.Add("World Renowned Surgeon");
+                    wish.Add("Fashion Phenomenon");
+                    wish.Add("Firefighter Super Hero");
+                    wish.Add("Home Design Hotshot");
+                    wish.Add("Paranormal Profiteer");
+                    wish.Add("Pervasive Private Eye");
+                    wish.Add("Distinguished Director");
+                    wish.Add("Superstar Actor");
+                    wish.Add("Master Acrobat");
+                    wish.Add("Master Magician");
+                    wish.Add("Vocal Legend");
+                    wish.Add("Celebrity Psychic");
+                    wish.Add("Master of Mysticism");
+                    wish.Add("Scientific Specialist");
+                    wish.Add("Seaside Savior");
+                    break;
+            }
 
 
         }

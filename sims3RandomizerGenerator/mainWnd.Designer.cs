@@ -86,7 +86,7 @@
             // simCareerStatic
             // 
             this.simCareerStatic.AutoSize = true;
-            this.simCareerStatic.Location = new System.Drawing.Point(12, 172);
+            this.simCareerStatic.Location = new System.Drawing.Point(12, 145);
             this.simCareerStatic.Name = "simCareerStatic";
             this.simCareerStatic.Size = new System.Drawing.Size(41, 13);
             this.simCareerStatic.TabIndex = 4;
@@ -104,7 +104,7 @@
             // simWishStatic
             // 
             this.simWishStatic.AutoSize = true;
-            this.simWishStatic.Location = new System.Drawing.Point(12, 145);
+            this.simWishStatic.Location = new System.Drawing.Point(12, 172);
             this.simWishStatic.Name = "simWishStatic";
             this.simWishStatic.Size = new System.Drawing.Size(34, 13);
             this.simWishStatic.TabIndex = 6;
@@ -202,10 +202,11 @@
             this.simJob.Items.AddRange(new object[] {
             "Steve",
             "Jobs"});
-            this.simJob.Location = new System.Drawing.Point(78, 169);
+            this.simJob.Location = new System.Drawing.Point(78, 142);
             this.simJob.Name = "simJob";
             this.simJob.Size = new System.Drawing.Size(283, 21);
             this.simJob.TabIndex = 15;
+            this.simJob.SelectedIndexChanged += new System.EventHandler(this.simJob_SelectedIndexChanged);
             // 
             // simAge
             // 
@@ -236,7 +237,7 @@
             "Lot",
             "Off",
             "Stuff"});
-            this.simLifetime.Location = new System.Drawing.Point(78, 142);
+            this.simLifetime.Location = new System.Drawing.Point(78, 169);
             this.simLifetime.Name = "simLifetime";
             this.simLifetime.Size = new System.Drawing.Size(283, 21);
             this.simLifetime.TabIndex = 17;

@@ -71,7 +71,7 @@ namespace sims3RandomizerGenerator
             jobs.Add("Medical");
             jobs.Add("Military");
             jobs.Add("Music");
-            jobs.Add("Politics");
+            jobs.Add("Political");
             jobs.Add("Science");
             jobs.Add("Singer");
             jobs.Add("Sports Agent");
@@ -253,36 +253,6 @@ namespace sims3RandomizerGenerator
                     wish.Add("Master of Mysticism");
                     break;
                 case "Lifeguard":
-                    wish.Add("Seaside Savior");
-                    break;
-                default:
-                    wish.Add("Become an Astronaut");
-                    wish.Add("Become a Creature-Robot Cross Breeder");
-                    wish.Add("Become a Master Thief");
-                    wish.Add("Become a Superstar Athlete");
-                    wish.Add("Celebrated Five-Star Chef");
-                    wish.Add("CEO of a Mega-Corporation");
-                    wish.Add("Forensic Specialist: Dynamic DNA Profiler");
-                    wish.Add("Hit Movie Composer");
-                    wish.Add("International Super Spy");
-                    wish.Add("Leader of the Free World");
-                    wish.Add("Rock Star");
-                    wish.Add("Star News Anchor");
-                    wish.Add("The Emperor of Evil");
-                    wish.Add("World Renowned Surgeon");
-                    wish.Add("Fashion Phenomenon");
-                    wish.Add("Firefighter Super Hero");
-                    wish.Add("Home Design Hotshot");
-                    wish.Add("Paranormal Profiteer");
-                    wish.Add("Pervasive Private Eye");
-                    wish.Add("Distinguished Director");
-                    wish.Add("Superstar Actor");
-                    wish.Add("Master Acrobat");
-                    wish.Add("Master Magician");
-                    wish.Add("Vocal Legend");
-                    wish.Add("Celebrity Psychic");
-                    wish.Add("Master of Mysticism");
-                    wish.Add("Scientific Specialist");
                     wish.Add("Seaside Savior");
                     break;
             }

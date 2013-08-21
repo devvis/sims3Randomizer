@@ -44,22 +44,28 @@ namespace sims3RandomizerGenerator
                 {
                     case "Toddler":
                         populateToddlerTraits();
+                        populateChildJob();
                         break;
 
                     case "Child":
                         populateChildTraits();
+                        populateChildJob();
                         break;
                     case "Teen":
                         populateTeenTraits();
+                        populateTeenJob();
                         break;
                     case "Young Adult":
                         populateAdultTraits();
+                        populateAdultJob();
                         break;
                     case "Adult":
                         populateAdultTraits();
+                        populateAdultJob();
                         break;
                     case "Elder":
                         populateAdultTraits();
+                        populateAdultJob();
                         break;
                     default:
                         populateAdultTraits();

@@ -68,7 +68,7 @@ namespace sims3RandomizerGenerator
             jobs.Add("Law Enforcement");
             jobs.Add("Lifeguard");
             jobs.Add("Magician");
-            jobs.Add("Medicine");
+            jobs.Add("Medical");
             jobs.Add("Military");
             jobs.Add("Music");
             jobs.Add("Politics");
@@ -288,6 +288,16 @@ namespace sims3RandomizerGenerator
             }
 
 
+            wish.Sort();
+
+            this.simLifetime.Items.Clear();
+
+
+            foreach (string w in wish)
+            {
+                this.simLifetime.Items.Add(w);
+
+            }
         }
 
 

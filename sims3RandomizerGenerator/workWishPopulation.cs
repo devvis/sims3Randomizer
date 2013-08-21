@@ -181,7 +181,7 @@ namespace sims3RandomizerGenerator
             // career-wishes
             switch (this.simJob.Text)
             {
-                case "Astronaut":
+                case "Military":
                     wish.Add("Become an Astronaut");
                     break;
                 case "Science":

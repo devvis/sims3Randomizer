@@ -106,15 +106,15 @@ namespace sims3RandomizerGenerator
             switch (this.simType.Text)
             {
                 case "Dog":
-                    // populateDogTraits();
+                    populateDogTraits();
                     populatePetAges();
                     break;
                 case "Cat":
-                    // populateCatTraits();
+                    populateCatTraits();
                     populatePetAges();
                     break;
                 case "Horse":
-                    // populateHorseTraits();
+                    populateHorseTraits();
                     populatePetAges();
                     break;
                 default:

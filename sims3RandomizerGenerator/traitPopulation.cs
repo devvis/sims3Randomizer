@@ -7,7 +7,6 @@ namespace sims3RandomizerGenerator
 {
     public partial class mainWnd 
     {
-
         private void populateToddlerTraits()
         {
             List<string> traits = new List<string>();

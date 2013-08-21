@@ -58,6 +58,7 @@
     <Compile Include="traitPopulation.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="workWishPopulation.cs" />
     <EmbeddedResource Include="mainWnd.resx">
       <DependentUpon>mainWnd.cs</DependentUpon>
     </EmbeddedResource>

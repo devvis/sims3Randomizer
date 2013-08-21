@@ -111,5 +111,12 @@ namespace sims3RandomizerGenerator
 
         }
 
+        private void populateChildJob()
+        {
+            this.simJob.Items.Clear();
+            this.simJob.Items.Add("None");
+        }
+
+
     }
 }

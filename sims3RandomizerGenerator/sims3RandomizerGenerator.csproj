@@ -55,7 +55,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="traitPopulation.cs" />
+    <Compile Include="traitPopulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="mainWnd.resx">
       <DependentUpon>mainWnd.cs</DependentUpon>
     </EmbeddedResource>

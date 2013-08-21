@@ -50,19 +50,19 @@ namespace sims3RandomizerGenerator
                         populateChildTraits();
                         break;
                     case "Teen":
-
+                        populateTeenTraits();
                         break;
                     case "Young Adult":
-
+                        populateAdultTraits();
                         break;
                     case "Adult":
-
+                        populateAdultTraits();
                         break;
                     case "Elder":
-
+                        populateAdultTraits();
                         break;
                     default:
-
+                        populateAdultTraits();
                         break;
                 }
             }

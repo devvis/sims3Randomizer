@@ -490,7 +490,7 @@ namespace theSims3Randomizer
             adultJob.Add("Law Enforcement");
             adultJob.Add("Lifeguard");
             adultJob.Add("Magician");
-            adultJob.Add("Medicine");
+            adultJob.Add("Medical");
             adultJob.Add("Military");
             adultJob.Add("Music");
             adultJob.Add("Politics");

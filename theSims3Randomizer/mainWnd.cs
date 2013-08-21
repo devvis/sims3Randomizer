@@ -471,7 +471,7 @@ namespace theSims3Randomizer
             List<string> adultJob = new List<string>();
             //Jobs and professions
             adultJob.Add("Acrobat");
-            adultJob.Add("Architecture");
+            adultJob.Add("Architectural Design");
             adultJob.Add("Art Appraiser");
             adultJob.Add("Athletic");
             adultJob.Add("Business");
